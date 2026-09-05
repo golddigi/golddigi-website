@@ -19,3 +19,12 @@
 @media(max-width:1000px) { .card { padding: 23px; } .card h3 { font-size: 24px; } .card>p { font-size: 12px; } }
 @media(max-width:800px) { .grid { gap: 12px; } .card { padding: 20px; } .card h3 { font-size: 22px; } .channel>span:first-child { font-size: 8px; gap: 7px; } .channel svg { width: 19px; height: 19px; } .flow li { font-size: 10px; } .bottom p { max-width: 320px; } }
 @media(max-width:700px) { .grid { grid-template-columns: 1fr; gap: 18px; } .card { padding: 27px; } .card h3 { font-size: 29px; max-width: 300px; } .channel { margin-bottom: 27px; } .channel>span:first-child { font-size: 10px; } .card>p { font-size: 13px; } .flow li { font-size: 12px; } .stack { font-size: 10px; } .bottom { align-items: flex-start; flex-direction: column; } }
+
+.card { background: transparent; border: 0; border-top: 2px solid #9ba98a; border-radius: 0; padding: 28px 12px 12px 0; }
+.card:nth-child(2) { border-top-color: #c98d75; }
+.card:nth-child(3) { border-top-color: #8ea7b6; }
+.card > p { font-size: 15px; }
+.channel > span:first-child { font-size: 11px; }
+.flow li { font-size: 13px; }
+.stack, .bottom p { font-size: 12px; }
+@media(max-width:700px) { .card { padding: 26px 0; } .grid { gap: 8px; } }

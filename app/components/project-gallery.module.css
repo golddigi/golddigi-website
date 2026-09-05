@@ -1,84 +1,24 @@
-.grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 46px 24px;
-}
-
+.grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px; }
 .project { min-width: 0; }
-
-.plaque {
-  display: flex;
-  min-height: 280px;
-  padding: 27px 30px;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  border: 1px solid rgb(36 39 35 / 10%);
-  border-radius: 8px;
-  transition: transform .25s ease, box-shadow .25s ease;
-}
-
-.plaque:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 22px rgb(36 39 35 / 7%);
-}
-
-.plaqueTop, .plaqueBottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-}
-
-.plaqueTop {
-  font-size: 9px;
-  font-weight: 600;
-  letter-spacing: 1.6px;
-}
-
-.plaqueTop svg { width: 18px; height: 18px; }
-
-.plaqueName {
-  max-width: 440px;
-  margin-block: 30px;
-  font-size: clamp(35px, 4.2vw, 57px);
-  line-height: 1.08;
-  letter-spacing: -2.2px;
-  font-weight: 500;
-}
-
-.plaqueBottom {
-  padding-top: 17px;
-  border-top: 1px solid currentColor;
-  font-size: 11px;
-}
-
-.mark { font-size: 23px; line-height: 1; }
-.shivom { background: #e5dfd1; color: #454c3b; }
-.shivom .plaqueName { font-family: Georgia, "Times New Roman", serif; }
-.soni { background: #e2ebe5; color: #34534b; }
-.soni .plaqueName { font-weight: 700; letter-spacing: -2.8px; }
-.antac { background: #353b36; color: #f3f1e8; }
-.antac .plaqueName { font-size: clamp(55px, 6vw, 82px); font-weight: 700; letter-spacing: -4px; }
-.divine { background: #eee6dc; color: #6a4b3d; }
-.divine .plaqueName { font-family: Georgia, "Times New Roman", serif; font-style: italic; }
-
-.caption { padding: 23px 0 0; }
-.caption h3 { margin: 0 0 10px; font-size: 20px; font-weight: 600; letter-spacing: -.55px; }
-.caption p { max-width: 470px; margin: 0; font-size: 14px; line-height: 1.75; color: #65675f; }
-.visit { display: inline-flex; align-items: center; gap: 9px; margin-top: 16px; font-size: 12px; font-weight: 600; }
-.visit svg { width: 15px; height: 15px; transition: transform .2s; }
-.visit:hover svg { transform: translate(2px, -2px); }
-
-@media (max-width: 640px) {
-  .grid { grid-template-columns: 1fr; gap: 34px; }
-  .plaque { min-height: 245px; padding: 24px; }
-  .plaqueName { font-size: 42px; }
-  .antac .plaqueName { font-size: 70px; }
-  .caption { padding-top: 18px; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .plaque, .visit svg { transition: none; }
-  .plaque:hover, .visit:hover svg { transform: none; }
-}
+.preview { display: block; position: relative; padding: 28px 28px 0; border-radius: 16px; border: 1px solid #dcded4; overflow: hidden; }
+.shivom { background: #e7e1d5; }
+.antac { background: #dce7e7; }
+.browserBar { display: flex; align-items: center; gap: 16px; padding: 13px 14px; background: #fff; color: #686b61; border-radius: 9px 9px 0 0; font-size: 11px; }
+.browserBar > svg { width: 15px; height: 15px; margin-left: auto; }
+.dots { color: #b6b9ae; font-size: 8px; letter-spacing: 2px; }
+.screen { aspect-ratio: 1.44; overflow: hidden; background: #fff; box-shadow: 0 10px 35px #24272315; }
+.screen img { display: block; width: 100%; height: auto; transition: transform .35s ease; }
+.preview:hover .screen img { transform: scale(1.025); }
+.open { display: flex; align-items: center; justify-content: space-between; min-height: 56px; gap: 12px; font-size: 13px; font-weight: 600; }
+.open svg { width: 17px; height: 17px; }
+.caption { padding-top: 24px; }
+.category { display: block; margin-bottom: 12px; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: #65675f; }
+.caption h3 { margin: 0 0 10px; font-size: 29px; font-weight: 500; letter-spacing: -1px; }
+.caption p { max-width: 47ch; margin: 0; font-size: 15px; line-height: 1.75; color: #65675f; }
+.archive { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 28px; }
+.archive h3 { font-size: 19px; font-weight: 500; margin: 0 0 8px; }
+.archive p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }
+.archive > div { display: flex; justify-content: space-between; gap: 16px; padding: 16px 0; border-bottom: 1px solid var(--line); font-size: 15px; }
+.archive > div span:last-child { color: var(--muted); font-size: 13px; }
+@media(max-width:640px) { .grid { grid-template-columns: 1fr; gap: 36px; } .preview { padding: 16px 16px 0; border-radius: 12px; } .browserBar { font-size: 10px; gap: 10px; } .caption { padding-top: 18px; } .archive > div { flex-direction: column; gap: 6px; } }
+@media(prefers-reduced-motion:reduce) { .screen img { transition: none; } .preview:hover .screen img { transform: none; } }

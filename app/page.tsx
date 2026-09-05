@@ -159,11 +159,9 @@ export default function Home() {
               <div className="pathway-main">
                 <p>FOR LOCAL BUSINESSES</p>
                 <h3>Google Business Profile<br /><em>optimization.</em></h3>
-                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More confidence before they get in touch.</strong></div>
                 <p className="pathway-description">Keep your business details, services, and photos clear and up to date on Google Search and Maps, so nearby customers know how to call or visit.</p>
                 <Link href="/google-business-profile" className="text-link">Explore profile services <Icon name="arrow-up-right" /></Link>
               </div>
-              <div className="pathway-outcome"><span>THE RESULT</span><strong>More confidence<br />before they get in touch.</strong><p>Accurate details, useful photos and a clear path to call, visit or enquire.</p></div>
             </article>
 
             <article className="pathway pathway-web">
@@ -171,11 +169,9 @@ export default function Home() {
               <div className="pathway-main">
                 <p>YOUR OWN ONLINE PRESENCE</p>
                 <h3>Custom<br /><em>websites.</em></h3>
-                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>A website that makes the right first impression.</strong></div>
                 <p className="pathway-description">Show your services and past work on a website designed for your business, with readable mobile layouts and clear ways to get in touch.</p>
                 <Link href="/websites" className="text-link">Explore websites <Icon name="arrow-up-right" /></Link>
               </div>
-              <div className="pathway-outcome"><span>THE RESULT</span><strong>A website that makes<br />the right first impression.</strong><p>Distinctive design, clear information and a natural way to start a conversation.</p></div>
             </article>
 
             <article className="pathway pathway-automation">
@@ -183,11 +179,9 @@ export default function Home() {
               <div className="pathway-main">
                 <p>THE WAY YOU GET THINGS DONE</p>
                 <h3>AI<br /><em>automations.</em></h3>
-                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More time for work only you can do.</strong></div>
                 <p className="pathway-description">Handle repeat questions on WhatsApp and email, or capture IndiaMART leads in a database. Start with one task and agree when you need to take over.</p>
                 <Link href="/ai-automations" className="text-link">Explore automations <Icon name="arrow-up-right" /></Link>
               </div>
-              <div className="pathway-outcome"><span>THE RESULT</span><strong>More time for work<br />only you can do.</strong><p>Thoughtful systems for leads, replies and routine follow-ups that need less chasing.</p></div>
             </article>
           </div>
           <p className="services-note">
@@ -202,7 +196,7 @@ export default function Home() {
               <p className="eyebrow"><span className="section-marker" /> SELECTED WEBSITE PROJECTS</p>
               <h2 id="work-title">Different businesses.<br /><em>Distinctly their own.</em></h2>
             </div>
-            <p className="section-description">Explore websites I’ve worked on for an architecture studio and a hospital. Open a project to see the live site.</p>
+            <p className="section-description">A closer look at websites I’ve worked on, from interior design to industrial products. Explore the actual sites below.</p>
           </div>
           <ProjectGallery limit={2} />
           <a className="text-link selected-work-link" href="/websites#website-projects">See all website projects <Icon name="arrow-up-right" /></a>
@@ -210,7 +204,6 @@ export default function Home() {
 
         <AutomationTeasers />
         <BusinessEssentials />
-        <TechStack />
 
         <section
           className="process section-wrap section-space"
@@ -252,6 +245,8 @@ export default function Home() {
             ))}
           </ol>
         </section>
+
+        <TechStack />
 
         <section
           className="faq-section section-wrap"

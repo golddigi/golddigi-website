@@ -14,3 +14,18 @@
 .brandNote { margin: 18px 0 0; color: #7a7c72; font-size: 9px; line-height: 1.7; }
 @media(max-width:900px) { .group { padding: 23px 19px; } .group li { gap: 10px; } .group strong { font-size: 11px; } .group li div>span { font-size: 9px; } .groups { gap: 14px; } .mark { width: 52px; } }
 @media(max-width:700px) { .section { padding-top: 66px; } .groups { grid-template-columns: 1fr; } .group { padding: 25px; } .group>p { min-height: 0; } .group strong { font-size: 13px; } .group li div>span { font-size: 11px; } .mark { width: 58px; } }
+
+.section { padding-block: 0 65px; }
+.disclosure { border-block: 1px solid var(--line); }
+.disclosure > summary { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-block: 30px; cursor: pointer; list-style: none; }
+.disclosure > summary::-webkit-details-marker { display: none; }
+.disclosure > summary .eyebrow { margin-bottom: 12px; }
+.disclosure h2 { font-size: clamp(25px,3vw,34px); letter-spacing: -1px; }
+.hint { margin: 12px 0 0; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.toggle { display: grid; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; flex-shrink: 0; font-size: 25px; }
+.disclosure[open] .toggle { transform: rotate(45deg); }
+.brandNote { padding-bottom: 24px; font-size: 11px; }
+.group > p { font-size: 14px; }
+.group strong { font-size: 14px; }
+.group li div > span { font-size: 12px; }
+@media(max-width:700px) { .section { padding-block: 0 30px; } }

@@ -2034,3 +2034,22 @@ h2 em {
   .pathway-description { margin-bottom: 12px; }
   .hero-actions .button { font-size: 13px; }
 }
+
+/* Compact service comparison and clearer section rhythm. */
+.pathways { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.pathway { display: flex; flex-direction: column; gap: 26px; padding: 30px; border-radius: 16px; }
+.pathway-number { min-height: 0; flex-direction: row; align-items: center; }
+.pathway-main { display: flex; flex: 1; flex-direction: column; }
+.pathway-main h3 { font-size: clamp(29px,2.6vw,37px); min-height: 120px; line-height: 1.13; letter-spacing: -1.2px; }
+.pathway-main > p:first-child { min-height: 33px; margin-bottom: 18px; }
+.pathway-description { margin-block: 20px 24px; }
+.pathway-main .text-link { margin-top: auto; justify-content: space-between; padding-top: 16px; border-top: 1px solid #ffffff35; text-decoration: none; }
+.pathway-outcome, .pathway-mobile-outcome { display: none; }
+.selected-work { padding-block: 80px; position: relative; }
+.selected-work::before { content: ""; position: absolute; z-index: -1; inset: 0 calc((min(1280px,100vw - 112px) - 100vw)/2); background: #eeeee6; border-block: 1px solid var(--line); }
+.contact-section { border-radius: 20px; }
+.hero { padding-block: 62px; }
+@media(max-width:1100px) { .pathway { padding: 24px; gap: 22px; } .pathway-main h3 { font-size: 29px; } .selected-work::before { inset-inline: -36px; } }
+@media(max-width:850px) { .pathways { grid-template-columns: 1fr; } .pathway { display: grid; grid-template-columns: 48px minmax(0,1fr); } .pathway-number { flex-direction: column; align-items: flex-start; gap: 22px; } .pathway-main h3 { min-height: 0; font-size: 35px; } .pathway-main > p:first-child { min-height: 0; } .selected-work::before { inset-inline: -24px; } }
+@media(max-width:700px) { .hero { padding-block: 44px 32px; } .selected-work { padding-block: 56px; } .pathway { display: flex; padding: 26px; gap: 24px; } .pathway-number { flex-direction: row; align-items: center; } .pathway-main h3 { font-size: 34px; } }
+@media(max-width:380px) { .selected-work::before { inset-inline: -18px; } .pathway { padding: 22px; } .pathway-main h3 { font-size: 30px; } }
