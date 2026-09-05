@@ -1,0 +1,21 @@
+.grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 20px; }
+.card { background: #f8f9f2; border: 1px solid #d9ddcf; border-radius: 9px; padding: 29px; display: flex; flex-direction: column; }
+.channel { display: flex; align-items: center; justify-content: space-between; gap: 15px; margin-bottom: 33px; color: #657452; }
+.channel>span:first-child { display: flex; align-items: center; gap: 10px; font-size: 9px; letter-spacing: 1px; font-weight: 600; }
+.channel svg { width: 23px; height: 23px; }
+.channel>span:last-child { color: #a1a78f; font: italic 22px Georgia,serif; }
+.card:nth-child(2) .channel { color: #ae5539; }
+.card:nth-child(3) .channel { color: #637a8d; }
+.card h3 { margin: 0 0 16px; font-size: 27px; font-weight: 500; letter-spacing: -1px; line-height: 1.15; }
+.card>p { margin: 0 0 26px; font-size: 13px; color: var(--muted); line-height: 1.8; }
+.flow { margin: auto 0 24px; padding: 0; list-style: none; display: grid; gap: 0; }
+.flow li { display: flex; align-items: center; position: relative; gap: 12px; padding-block: 10px; font-size: 11px; }
+.flow li>span { width: 8px; height: 8px; border-radius: 50%; border: 1px solid #a1ad8d; background: #e9eedf; flex-shrink: 0; position: relative; z-index: 1; }
+.flow li:not(:last-child)::after { content: ""; position: absolute; width: 1px; height: 100%; background: #d6ddca; left: 3.5px; top: 50%; }
+.flow li:last-child>span { background: #6f8755; border-color: #6f8755; }
+.stack { font-size: 9px; color: #737c64; border-top: 1px solid #dce1d2; padding-top: 19px; line-height: 1.7; }
+.bottom { display: flex; justify-content: space-between; align-items: center; gap: 25px; margin-top: 28px; }
+.bottom p { font-size: 10px; line-height: 1.8; color: #717962; margin: 0; }
+@media(max-width:1000px) { .card { padding: 23px; } .card h3 { font-size: 24px; } .card>p { font-size: 12px; } }
+@media(max-width:800px) { .grid { gap: 12px; } .card { padding: 20px; } .card h3 { font-size: 22px; } .channel>span:first-child { font-size: 8px; gap: 7px; } .channel svg { width: 19px; height: 19px; } .flow li { font-size: 10px; } .bottom p { max-width: 320px; } }
+@media(max-width:700px) { .grid { grid-template-columns: 1fr; gap: 18px; } .card { padding: 27px; } .card h3 { font-size: 29px; max-width: 300px; } .channel { margin-bottom: 27px; } .channel>span:first-child { font-size: 10px; } .card>p { font-size: 13px; } .flow li { font-size: 12px; } .stack { font-size: 10px; } .bottom { align-items: flex-start; flex-direction: column; } }

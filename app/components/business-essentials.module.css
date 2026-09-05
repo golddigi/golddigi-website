@@ -1,0 +1,148 @@
+.section {
+  border-bottom: 1px solid var(--line);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fcfcf8;
+}
+
+.topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+
+.topline svg {
+  box-sizing: content-box;
+  width: 24px;
+  height: 24px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #edf1e8;
+  color: #657052;
+}
+
+.topline > span {
+  font: italic 23px Georgia, serif;
+  color: #7c836d;
+}
+
+.label {
+  margin: 0 0 13px;
+  color: #66704f;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.item h3 {
+  margin: 0;
+  font-size: clamp(24px, 2.6vw, 29px);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.8px;
+}
+
+.description {
+  max-width: 48ch;
+  margin: 17px 0 25px;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.item ul {
+  display: grid;
+  gap: 10px;
+  margin: auto 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+
+.item li {
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.item li svg {
+  flex-shrink: 0;
+  width: 15px;
+  height: 15px;
+  margin-top: 3px;
+  color: #657052;
+}
+
+.note {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-top: 28px;
+}
+
+.note p {
+  max-width: 570px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.note a {
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .item {
+    padding: 24px;
+  }
+
+  .note {
+    align-items: flex-start;
+  }
+
+  .note a {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .topline {
+    margin-bottom: 24px;
+  }
+
+  .item h3 {
+    font-size: 26px;
+  }
+
+  .description {
+    margin-bottom: 22px;
+  }
+
+  .note {
+    flex-direction: column;
+    gap: 18px;
+  }
+}
