@@ -360,6 +360,152 @@ h2 em {
   color: var(--muted);
   line-height: 1.8;
 }
+.pathways {
+  display: grid;
+  gap: 18px;
+}
+.pathway {
+  display: grid;
+  grid-template-columns: 94px minmax(0, 1.2fr) minmax(265px, .8fr);
+  gap: 30px;
+  padding: 37px 32px 39px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform .25s, box-shadow .25s;
+}
+.pathway:hover {
+  position: relative;
+  z-index: 1;
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px -25px #24272380;
+}
+.pathway-local {
+  color: #f8f7f0;
+  background: #292e28;
+  border-color: #292e28;
+}
+.pathway-web {
+  color: #f6f5ef;
+  background: #26343a;
+  border-color: #26343a;
+}
+.pathway-automation {
+  color: #fff7f1;
+  background: #55352e;
+  border-color: #55352e;
+}
+.pathway-number {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 151px;
+  color: #757c6c;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 31px;
+  font-style: italic;
+  line-height: 1;
+}
+.pathway-number svg {
+  width: 25px;
+  height: 25px;
+  color: #69745d;
+}
+.pathway-local .pathway-number { color: #b7c0ae; }
+.pathway-local .pathway-number svg { color: #f08a68; }
+.pathway-web .pathway-number { color: #b6c4c8; }
+.pathway-web .pathway-number svg { color: #83b6c2; }
+.pathway-automation .pathway-number { color: #d3b8aa; }
+.pathway-automation .pathway-number svg { color: #f19a76; }
+.pathway-main > p:first-child,
+.pathway-outcome > span,
+.pathway-mobile-outcome > span {
+  margin: 3px 0 18px;
+  color: #697160;
+  font-size: 8px;
+  font-weight: 600;
+  letter-spacing: 1.15px;
+  line-height: 1.5;
+}
+.pathway-local .pathway-main > p:first-child,
+.pathway-local .pathway-outcome > span,
+.pathway-local .pathway-mobile-outcome > span { color: #bdc6b5; }
+.pathway-web .pathway-main > p:first-child,
+.pathway-web .pathway-outcome > span,
+.pathway-web .pathway-mobile-outcome > span { color: #b8c9cd; }
+.pathway-automation .pathway-main > p:first-child,
+.pathway-automation .pathway-outcome > span,
+.pathway-automation .pathway-mobile-outcome > span { color: #d8bcae; }
+.pathway-main {
+  min-width: 0;
+}
+.pathway-main h3 {
+  margin: 0;
+  font-size: clamp(31px, 3.1vw, 43px);
+  font-weight: 500;
+  letter-spacing: -1.75px;
+  line-height: 1.07;
+}
+.pathway-local .pathway-main h3 em { color: #f0aa90; }
+.pathway-web .pathway-main h3 em { color: #9ec8d2; }
+.pathway-automation .pathway-main h3 em { color: #f0a184; }
+.pathway-description {
+  max-width: 475px;
+  margin: 18px 0 23px;
+  color: var(--muted);
+  font-size: 13px;
+  line-height: 1.8;
+}
+.pathway-local .pathway-description { color: #c5cabe; }
+.pathway-web .pathway-description { color: #c4ced0; }
+.pathway-automation .pathway-description { color: #decac0; }
+.pathway-main .text-link { font-size: 11px; }
+.pathway-local .pathway-main .text-link,
+.pathway-web .pathway-main .text-link,
+.pathway-automation .pathway-main .text-link { color: #fff8ef; }
+.pathway-outcome {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 0;
+  padding: 26px 28px;
+  border: 1px solid #cfd4c7;
+  border-radius: 9px;
+  background: rgb(255 255 255 / .28);
+}
+.pathway-local .pathway-outcome {
+  border-color: #50584c;
+  background: #333a31;
+}
+.pathway-web .pathway-outcome {
+  border-color: #4b5b61;
+  background: #303f45;
+}
+.pathway-automation .pathway-outcome {
+  border-color: #765046;
+  background: #603e36;
+}
+.pathway-outcome > span { margin: 0 0 15px; }
+.pathway-outcome strong,
+.pathway-mobile-outcome strong {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -.35px;
+  line-height: 1.35;
+}
+.pathway-outcome p {
+  max-width: 255px;
+  margin: 13px 0 0;
+  color: #6d7168;
+  font-size: 11px;
+  line-height: 1.75;
+}
+.pathway-local .pathway-outcome p { color: #bec7b6; }
+.pathway-web .pathway-outcome p { color: #c0cbce; }
+.pathway-automation .pathway-outcome p { color: #dcc7bd; }
+.pathway-mobile-outcome { display: none; }
 .service-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1031,6 +1177,12 @@ h2 em {
   .section-space {
     padding-block: 85px;
   }
+  .pathway {
+    grid-template-columns: 68px minmax(0, 1.2fr) minmax(225px, .8fr);
+    gap: 22px;
+    padding: 31px 27px 33px;
+  }
+  .pathway-outcome { padding: 23px; }
   .service-panel {
     padding: 28px 28px 20px;
   }
@@ -1156,6 +1308,25 @@ h2 em {
     font-size: 12px;
     max-width: 280px;
   }
+  .pathway {
+    grid-template-columns: 54px minmax(0, 1fr);
+    gap: 18px;
+    padding: 28px 24px 30px;
+  }
+  .pathway-number { min-height: 132px; font-size: 25px; }
+  .pathway-number svg { width: 21px; height: 21px; }
+  .pathway-outcome { display: none; }
+  .pathway-mobile-outcome {
+    display: block;
+    margin-top: 18px;
+    padding: 15px 0 0;
+    border-top: 1px solid #ced2c6;
+  }
+  .pathway-local .pathway-mobile-outcome { border-color: #525a4e; }
+  .pathway-web .pathway-mobile-outcome { border-color: #4b5b61; }
+  .pathway-automation .pathway-mobile-outcome { border-color: #765046; }
+  .pathway-mobile-outcome > span { display: block; margin: 0 0 8px; }
+  .pathway-mobile-outcome strong { font-size: 15px; }
   .service-panel {
     padding: 25px 24px 20px;
   }
@@ -1452,6 +1623,14 @@ h2 em {
     font-size: 13px;
     max-width: 360px;
   }
+  .pathway { grid-template-columns: 43px minmax(0, 1fr); padding: 26px 20px 28px; gap: 15px; }
+  .pathway-number { min-height: 126px; font-size: 23px; }
+  .pathway-number svg { width: 19px; height: 19px; }
+  .pathway-main > p:first-child { margin-bottom: 13px; font-size: 7px; }
+  .pathway-main h3 { font-size: 34px; letter-spacing: -1.45px; }
+  .pathway-description { margin: 15px 0 19px; font-size: 12px; }
+  .pathway-mobile-outcome { margin-top: 16px; padding-top: 13px; }
+  .pathway-mobile-outcome strong { font-size: 14px; }
   .desktop-break {
     display: none;
   }
@@ -1708,6 +1887,11 @@ h2 em {
     font-size: clamp(38px,12.5vw,46px);
     letter-spacing: -2.8px;
   }
+  .pathway { grid-template-columns: 34px minmax(0, 1fr); padding-inline: 16px; gap: 11px; }
+  .pathway-number { font-size: 20px; }
+  .pathway-number svg { width: 17px; height: 17px; }
+  .pathway-main h3 { font-size: 28px; overflow-wrap: anywhere; }
+  .pathway-main .text-link { gap: 8px; }
   .hero-eyebrow {
     font-size: 7px;
   }

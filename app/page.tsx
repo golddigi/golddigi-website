@@ -1,6 +1,5 @@
 import { Header } from "./components/header";
 import { HeroVisual } from "./components/hero-visual";
-import { LocalPresence } from "./components/local-presence";
 import { Icon, BrandMark } from "./components/icons";
 import { ProjectForm } from "./components/project-form";
 import { AutomationTeasers } from "./components/automation-teasers";
@@ -154,85 +153,41 @@ export default function Home() {
               time on repeat tasks. Start where your business needs it most.
             </p>
           </div>
-          <div className="service-grid">
-            <LocalPresence />
-            <article className="service-panel website-service">
-              <div className="service-topline">
-                <span className="service-icon">
-                  <Icon name="browser" />
-                </span>
-                <span className="service-number">02 / YOUR OWN ONLINE PRESENCE</span>
+          <div className="pathways">
+            <article className="pathway pathway-local">
+              <div className="pathway-number"><span>01</span><Icon name="map-pin" /></div>
+              <div className="pathway-main">
+                <p>FOR LOCAL BUSINESSES</p>
+                <h3>Google Business Profile<br /><em>optimization.</em></h3>
+                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More confidence before they get in touch.</strong></div>
+                <p className="pathway-description">Make it easier for nearby customers to understand your business and choose their next step on Google Search and Maps.</p>
+                <Link href="/google-business-profile" className="text-link">Explore profile services <Icon name="arrow-up-right" /></Link>
               </div>
-              <h3>Custom websites</h3>
-              <p className="service-intro">Your business, at its best online.</p>
-              <p className="service-description">
-                A website built around your brand and your customers, with clear
-                content and an easy path from “just looking” to “let’s talk.”
-              </p>
-              <ul className="deliverables">
-                <li>
-                  <Icon name="check" />
-                  Custom design that feels like your business
-                </li>
-                <li>
-                  <Icon name="check" />
-                  Clear, well-organized pages and content
-                </li>
-                <li>
-                  <Icon name="check" />
-                  Fast, responsive layouts for every screen
-                </li>
-                <li>
-                  <Icon name="check" />
-                  Enquiry forms, bookings, and useful integrations
-                </li>
-              </ul>
-              <div className="service-bottom">
-                <span>Design · Content · Development · Launch</span>
-                <Link href="/websites" className="text-link">
-                  Explore websites <Icon name="arrow-up-right" />
-                </Link>
-              </div>
+              <div className="pathway-outcome"><span>THE RESULT</span><strong>More confidence<br />before they get in touch.</strong><p>Accurate details, useful photos and a clear path to call, visit or enquire.</p></div>
             </article>
-            <article className="service-panel automation-service">
-              <div className="service-topline">
-                <span className="service-icon">
-                  <Icon name="workflow" />
-                </span>
-                <span className="service-number">
-                  03 / THE WAY YOU GET THINGS DONE
-                </span>
+
+            <article className="pathway pathway-web">
+              <div className="pathway-number"><span>02</span><Icon name="browser" /></div>
+              <div className="pathway-main">
+                <p>YOUR OWN ONLINE PRESENCE</p>
+                <h3>Custom<br /><em>websites.</em></h3>
+                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>A website that makes the right first impression.</strong></div>
+                <p className="pathway-description">A website built around your brand and your customers, with clear content and an easy path from “just looking” to “let’s talk.”</p>
+                <Link href="/websites" className="text-link">Explore websites <Icon name="arrow-up-right" /></Link>
               </div>
-              <h3>AI automations</h3>
-              <p className="service-intro">Less manual work. More room to grow.</p>
-              <p className="service-description">
-                WhatsApp conversations, email replies, and lead capture—connected
-                to the tools your business already uses.
-              </p>
-              <ul className="deliverables">
-                <li>
-                  <Icon name="check" />
-                  WhatsApp outreach and AI-generated replies
-                </li>
-                <li>
-                  <Icon name="check" />
-                  Email agents that respond to incoming messages
-                </li>
-                <li>
-                  <Icon name="check" />
-                  New IndiaMART leads saved to your database
-                </li>
-                <li>
-                  <Icon name="check" />
-                  Connected workflows, testing, and handover
-                </li>
-              </ul>
-              <div className="service-bottom">
-                <span>Conversations · Replies · Lead capture</span>
-                <Link href="/ai-automations" className="text-link">
-                  Explore automations <Icon name="arrow-up-right" />
-                </Link>
+              <div className="pathway-outcome"><span>THE RESULT</span><strong>A website that makes<br />the right first impression.</strong><p>Distinctive design, clear information and a natural way to start a conversation.</p></div>
+            </article>
+
+            <article className="pathway pathway-automation">
+              <div className="pathway-number"><span>03</span><Icon name="workflow" /></div>
+              <div className="pathway-main">
+                <p>THE WAY YOU GET THINGS DONE</p>
+                <h3>AI<br /><em>automations.</em></h3>
+                <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More time for work only you can do.</strong></div>
+                <p className="pathway-description">Connect your WhatsApp conversations, email replies and lead capture to the tools your business already uses.</p>
+                <Link href="/ai-automations" className="text-link">Explore automations <Icon name="arrow-up-right" /></Link>
               </div>
+              <div className="pathway-outcome"><span>THE RESULT</span><strong>More time for work<br />only you can do.</strong><p>Thoughtful systems for leads, replies and routine follow-ups that need less chasing.</p></div>
             </article>
           </div>
           <p className="services-note">
