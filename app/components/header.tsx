@@ -27,7 +27,7 @@ export function Header() {
     <header
       className="site-header"
       onKeyDown={(event) => {
-        if (event.key === "Escape") {
+        if (event.key === "Escape" && open) {
           setOpen(false);
           event.currentTarget
             .querySelector<HTMLButtonElement>(".menu-toggle")

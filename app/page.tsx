@@ -97,7 +97,8 @@ export default function Home() {
             </h1>
             <p className="hero-description">
               Custom websites, Google Business Profile optimization, and AI
-              automations. I help customers find you, choose you, and take the next step.
+              automations for small businesses. Work directly with Apurv to improve
+              your online presence and reduce repetitive work.
             </p>
             <div className="hero-actions">
               <a className="button button-orange" href="#contact">
@@ -108,8 +109,7 @@ export default function Home() {
               </a>
             </div>
             <p className="hero-footnote">
-              <span className="tiny-star">✳</span> Thoughtfully designed. Built for
-              your business.
+              <span className="tiny-star" aria-hidden="true">✳</span> Clear scope, price, and timeline before work begins.
             </p>
           </div>
           <HeroVisual />
@@ -143,9 +143,9 @@ export default function Home() {
                 <span className="section-marker" /> WHAT I DO
               </p>
               <h2 id="services-title">
-                Three ways to
+                Find the right
                 <br />
-                move <em>forward.</em>
+                <em>starting point.</em>
               </h2>
             </div>
             <p className="section-description">
@@ -160,7 +160,7 @@ export default function Home() {
                 <p>FOR LOCAL BUSINESSES</p>
                 <h3>Google Business Profile<br /><em>optimization.</em></h3>
                 <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More confidence before they get in touch.</strong></div>
-                <p className="pathway-description">Make it easier for nearby customers to understand your business and choose their next step on Google Search and Maps.</p>
+                <p className="pathway-description">Keep your business details, services, and photos clear and up to date on Google Search and Maps, so nearby customers know how to call or visit.</p>
                 <Link href="/google-business-profile" className="text-link">Explore profile services <Icon name="arrow-up-right" /></Link>
               </div>
               <div className="pathway-outcome"><span>THE RESULT</span><strong>More confidence<br />before they get in touch.</strong><p>Accurate details, useful photos and a clear path to call, visit or enquire.</p></div>
@@ -172,7 +172,7 @@ export default function Home() {
                 <p>YOUR OWN ONLINE PRESENCE</p>
                 <h3>Custom<br /><em>websites.</em></h3>
                 <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>A website that makes the right first impression.</strong></div>
-                <p className="pathway-description">A website built around your brand and your customers, with clear content and an easy path from “just looking” to “let’s talk.”</p>
+                <p className="pathway-description">Show your services and past work on a website designed for your business, with readable mobile layouts and clear ways to get in touch.</p>
                 <Link href="/websites" className="text-link">Explore websites <Icon name="arrow-up-right" /></Link>
               </div>
               <div className="pathway-outcome"><span>THE RESULT</span><strong>A website that makes<br />the right first impression.</strong><p>Distinctive design, clear information and a natural way to start a conversation.</p></div>
@@ -184,7 +184,7 @@ export default function Home() {
                 <p>THE WAY YOU GET THINGS DONE</p>
                 <h3>AI<br /><em>automations.</em></h3>
                 <div className="pathway-mobile-outcome"><span>THE RESULT</span><strong>More time for work only you can do.</strong></div>
-                <p className="pathway-description">Connect your WhatsApp conversations, email replies and lead capture to the tools your business already uses.</p>
+                <p className="pathway-description">Handle repeat questions on WhatsApp and email, or capture IndiaMART leads in a database. Start with one task and agree when you need to take over.</p>
                 <Link href="/ai-automations" className="text-link">Explore automations <Icon name="arrow-up-right" /></Link>
               </div>
               <div className="pathway-outcome"><span>THE RESULT</span><strong>More time for work<br />only you can do.</strong><p>Thoughtful systems for leads, replies and routine follow-ups that need less chasing.</p></div>
@@ -202,7 +202,7 @@ export default function Home() {
               <p className="eyebrow"><span className="section-marker" /> SELECTED WEBSITE PROJECTS</p>
               <h2 id="work-title">Different businesses.<br /><em>Distinctly their own.</em></h2>
             </div>
-            <p className="section-description">From interior design to industrial services, a closer look at websites I’ve worked on.</p>
+            <p className="section-description">Explore websites I’ve worked on for an architecture studio and a hospital. Open a project to see the live site.</p>
           </div>
           <ProjectGallery limit={2} />
           <a className="text-link selected-work-link" href="/websites#website-projects">See all website projects <Icon name="arrow-up-right" /></a>
@@ -310,6 +310,14 @@ export default function Home() {
               Want a stronger local presence, a better website, or less manual
               work? Tell me about your business and what you’d like to improve.
             </p>
+            <div className="contact-next">
+              <h3>What happens next?</h3>
+              <ol>
+                <li>Share your business and what you want to improve.</li>
+                <li>We discuss the right starting point and any questions.</li>
+                <li>You review the scope, price, and timeline before deciding.</li>
+              </ol>
+            </div>
             <span className="contact-signoff">
               Good things start with a conversation. <Icon name="arrow-down" />
             </span>

@@ -1997,3 +1997,40 @@ h2 em {
     transform: none;
   }
 }
+
+/* Shared readability and interaction rules across marketing pages. */
+.desktop-nav a { display: inline-flex; align-items: center; min-height: 44px; }
+.text-link { min-height: 44px; }
+.pathway-main .text-link { font-size: 14px; text-decoration: underline; text-underline-offset: 5px; }
+.pathway .text-link:focus-visible { outline-color: #fff8ef; }
+.pathway-main > p:first-child, .pathway-outcome > span, .pathway-mobile-outcome > span { font-size: 11px; letter-spacing: .8px; }
+.pathway-description { font-size: 15px; }
+.contact-next { margin-top: 28px; padding-top: 24px; border-top: 1px solid #bfc5b7; }
+.contact-next h3 { margin: 0 0 14px; font-size: 17px; font-weight: 600; }
+.contact-next ol { margin: 0; padding-left: 21px; display: grid; gap: 12px; list-style: decimal; font-size: 14px; line-height: 1.7; }
+.mobile-nav { max-height: calc(100dvh - 74px); overflow-y: auto; }
+@media (min-width: 701px) and (max-width: 1000px) {
+  .desktop-nav { display: none; }
+  .header-inner { height: 74px; }
+  .header-cta { margin-left: auto; }
+  .menu-toggle { display: flex; flex-shrink: 0; }
+  .mobile-nav:not([hidden]) { display: flex; position: absolute; inset: 74px 0 auto; background: var(--background); padding: 12px 24px 24px; flex-direction: column; border-bottom: 1px solid var(--line); box-shadow: 0 14px 18px #2427230d; }
+  .mobile-nav a { display: flex; align-items: center; justify-content: space-between; padding: 17px 2px; font-size: 15px; border-bottom: 1px solid var(--line); }
+  .mobile-nav a svg { width: 18px; height: 18px; }
+}
+@media (max-width: 850px) {
+  .hero-description, .section-description, .process-steps li p, .faq-item > p { font-size: 15px; }
+  .faq-item summary { font-size: 15px; line-height: 1.5; }
+  .hero-footnote, .services-note, .benefit-strip p { font-size: 12px; line-height: 1.7; }
+  .hero-actions { flex-wrap: wrap; gap: 12px 24px; }
+  .hero-actions .text-link { font-size: 14px; }
+  .hero-eyebrow { font-size: 10px; line-height: 1.7; }
+  .contact-copy > p.contact-small { font-size: 14px; }
+}
+@media (max-width: 700px) {
+  .pathway { grid-template-columns: 1fr; gap: 18px; padding: 25px; }
+  .pathway-number { flex-direction: row; align-items: center; min-height: 0; }
+  .pathway-main h3 { font-size: clamp(29px, 8vw, 38px); overflow-wrap: normal; }
+  .pathway-description { margin-bottom: 12px; }
+  .hero-actions .button { font-size: 13px; }
+}

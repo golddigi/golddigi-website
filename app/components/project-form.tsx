@@ -90,7 +90,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
         </span>
         <div>
           <h3>Tell me what you have in mind.</h3>
-          <p>A few details are enough to start a conversation.</p>
+          <p>Prepare a message, then send it through WhatsApp or your email app. Fields are required unless marked optional.</p>
         </div>
       </div>
 
