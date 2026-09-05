@@ -196,7 +196,7 @@ export default function Home() {
               <p className="eyebrow"><span className="section-marker" /> SELECTED WEBSITE PROJECTS</p>
               <h2 id="work-title">Different businesses.<br /><em>Distinctly their own.</em></h2>
             </div>
-            <p className="section-description">A closer look at websites I’ve worked on, from interior design to industrial products. Explore the actual sites below.</p>
+            <p className="section-description">A closer look at websites I’ve worked on, from interior design to water treatment and industrial supply. Explore the actual sites below.</p>
           </div>
           <ProjectGallery limit={2} />
           <a className="text-link selected-work-link" href="/websites#website-projects">See all website projects <Icon name="arrow-up-right" /></a>

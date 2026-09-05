@@ -2,7 +2,7 @@
 .project { min-width: 0; }
 .preview { display: block; position: relative; padding: 28px 28px 0; border-radius: 16px; border: 1px solid #dcded4; overflow: hidden; }
 .shivom { background: #e7e1d5; }
-.antac { background: #dce7e7; }
+.daksha { background: #dbe5e1; }
 .browserBar { display: flex; align-items: center; gap: 16px; padding: 13px 14px; background: #fff; color: #686b61; border-radius: 9px 9px 0 0; font-size: 11px; }
 .browserBar > svg { width: 15px; height: 15px; margin-left: auto; }
 .dots { color: #b6b9ae; font-size: 8px; letter-spacing: 2px; }

@@ -4,7 +4,7 @@ import styles from "./project-gallery.module.css";
 
 const projects = [
   { name: "Shivom Designs", category: "Architecture & interiors", description: "Interior design services and a visual project portfolio, with a clear route to an enquiry.", url: "https://shivomdesigns.com/", image: "/projects/shivom.png", domain: "shivomdesigns.com", style: "shivom" },
-  { name: "Antac", category: "Manufacturing & engineering", description: "A product-led business website presenting lighting infrastructure and industrial capabilities.", url: "https://antac.in/", image: "/projects/antac.png", domain: "antac.in", style: "antac" },
+  { name: "Daksha Enterprises", category: "Water treatment & industrial supply", description: "A product-led website for RO systems, water treatment chemicals, and plant setup services.", url: "https://daksha-enterprises.com/", image: "/projects/daksha-enterprises.png", domain: "daksha-enterprises.com", style: "daksha" },
 ];
 
 export function ProjectGallery({ limit }: { limit?: number }) {

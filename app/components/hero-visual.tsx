@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import styles from "./hero-visual.module.css";
 
 function MiniIcon({ type }: { type: "window" | "spark" | "mail" | "sort" | "check" }) {
@@ -76,16 +77,16 @@ export function HeroVisual() {
           <div className={styles.conceptCaption}><span />Custom website concept</div>
         </div>
 
-        <div className={styles.workflow} aria-hidden="true">
-          <div className={styles.workflowHeading}><span className={styles.workflowKicker}>CONVERSATIONS, CONNECTED</span><span className={styles.smallSpark}>✳</span></div>
-          <div className={styles.workflowStatus}><span />WhatsApp workflow</div>
-          <div className={styles.workflowTrigger}><span className={styles.triggerIcon}><MiniIcon type="mail" /></span><div><span className={styles.triggerLabel}>WHEN THIS HAPPENS</span><strong>Customer replies</strong></div></div>
-          <div className={styles.workflowSteps}>
-            <div className={styles.workflowStep}><span className={styles.stepIcon}><MiniIcon type="sort" /></span><span>Read the message</span><span className={styles.stepCheck}><MiniIcon type="check" /></span></div>
-            <div className={styles.workflowStep}><span className={`${styles.stepIcon} ${styles.aiIcon}`}><MiniIcon type="spark" /></span><span>Generate an answer</span><span className={styles.stepCheck}><MiniIcon type="check" /></span></div>
-            <div className={`${styles.workflowStep} ${styles.finalStep}`}><span className={styles.stepIcon}><MiniIcon type="check" /></span><span>Reply on WhatsApp</span><span className={styles.reviewDot} /></div>
-          </div>
-          <div className={styles.workflowFooter}>Keep the conversation going.<span>↗</span></div>
+        <div className={styles.workflow}>
+          <Image
+            src="/images/n8n-style-workflow.png"
+            alt="A workflow canvas showing a WhatsApp message passing through an AI agent, then replying to the customer, saving the lead, or going to human review"
+            width={1536}
+            height={1024}
+            sizes="(max-width: 700px) 92vw, 36vw"
+            priority
+          />
+          <div className={styles.workflowFooter}><span><i /> WhatsApp enquiry workflow</span><strong>Built in n8n</strong></div>
         </div>
         <span className={styles.cornerMark} aria-hidden="true">✳</span>
       </div>
@@ -98,7 +99,7 @@ export function HeroVisual() {
         <p className={styles.captionText} aria-live="polite">
           {focus === "website" ? "Thoughtful design. Entirely your own." : "Customer replies. Your agent answers."}
         </p>
-        <span className={styles.srOnly}>A custom website concept and an illustration of a WhatsApp AI reply workflow I’ve built: read the message, generate an answer, and reply on WhatsApp.</span>
+        <span className={styles.srOnly}>A custom website concept and an n8n-style WhatsApp enquiry workflow with AI handling, lead capture, and human review.</span>
       </figcaption>
     </figure>
   );

@@ -96,10 +96,10 @@
 
 .workflow {
   position: absolute;
-  width: 48%;
+  width: 62%;
   right: 0;
   bottom: 1%;
-  padding: 3cqw 3cqw 0;
+  padding: 1.15cqw 1.15cqw 0;
   border: 1px solid #d9dcd1;
   border-radius: 2cqw;
   background: #fdfdf9;
@@ -107,6 +107,8 @@
   transform: rotate(3deg);
   transition: transform 450ms ease, box-shadow 450ms ease, border-color 450ms ease;
 }
+
+.workflow > img { display: block; width: 100%; height: auto; border-radius: 1.2cqw; }
 
 .workflowHeading { display: flex; justify-content: space-between; align-items: center; gap: 1cqw; }
 .workflowKicker { font-size: 1.2cqw; font-weight: 600; letter-spacing: .11em; color: #7c8272; }
@@ -129,12 +131,14 @@
 .stepCheck svg { width: 1.7cqw; height: 1.7cqw; }
 .finalStep { border-color: #d4dcc5; background: #eef2e7; }
 .reviewDot { width: .8cqw; height: .8cqw; margin-left: auto; border-radius: 50%; background: #94a17e; }
-.workflowFooter { display: flex; justify-content: space-between; margin: 0 -3cqw; padding: 1.6cqw 3cqw; border-top: 1px solid #e7e9df; color: #7c8470; font-size: 1.45cqw; }
-.workflowFooter span { color: #83936e; }
+.workflowFooter { display: flex; align-items: center; justify-content: space-between; gap: 1cqw; margin: 0 -1.15cqw; padding: 1.25cqw 1.8cqw; border-top: 1px solid #e7e9df; color: #6f7767; font-size: 1.3cqw; }
+.workflowFooter span { display: flex; align-items: center; gap: .7cqw; }
+.workflowFooter i { width: .7cqw; height: .7cqw; border-radius: 50%; background: #72a35f; }
+.workflowFooter strong { color: #b84d2f; font-size: 1.15cqw; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; }
 .cornerMark { position: absolute; bottom: 1.5%; left: 8%; color: #ed512c; font-size: 6cqw; transform: rotate(15deg); }
 
 .visual[data-focus="automation"] .browser { transform: rotate(-7deg) translate(-.5cqw, -.8cqw); box-shadow: 0 1cqw 3cqw #303a2310; opacity: .88; }
-.visual[data-focus="automation"] .workflow { transform: rotate(0deg) translateY(-1cqw); border-color: #adba98; box-shadow: 0 2.8cqw 5cqw #353d2424, 0 0 0 .65cqw #aab99820; }
+.visual[data-focus="automation"] .workflow { transform: rotate(0deg) translate(-1cqw, -2cqw) scale(1.08); border-color: #adba98; box-shadow: 0 2.8cqw 5cqw #353d2424, 0 0 0 .65cqw #aab99820; }
 .visual[data-focus="website"] .browser { box-shadow: 0 2.5cqw 5cqw #303a2317, 0 0 0 .55cqw #aab99812; }
 
 .caption { display: flex; flex-direction: column; align-items: center; padding-top: 4.2cqw; }
@@ -149,4 +153,10 @@
 
 @media (prefers-reduced-motion: reduce) {
   .browser, .workflow, .focusControls button { transition: none; }
+}
+
+@media (max-width: 700px) {
+  .workflow { width: 72%; }
+  .workflowFooter { font-size: 1.5cqw; }
+  .workflowFooter strong { font-size: 1.35cqw; }
 }
