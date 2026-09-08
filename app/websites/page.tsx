@@ -35,11 +35,11 @@ const support = [
 ];
 
 const faqs = [
-  { question: "Can you redesign my current website?", answer: "Yes. We start by looking at what you have, what still works and what needs to change. Useful pages and content can carry over, and any URL changes are planned before launch." },
-  { question: "Will I be able to update it myself?", answer: "If regular updates are part of your needs, we can include Sanity CMS for the content you want to manage. The proposal will set out which content is editable, and I’ll show you how to use it." },
+  { question: "Can you redesign an existing website?", answer: "Yes. We start by looking at what you have, what still works and what needs to change. Useful pages and content can carry over, and any URL changes are planned before launch." },
+  { question: "Can the website be updated without editing code?", answer: "If regular updates are part of your needs, we can include Sanity CMS for the content you want to manage. The proposal will set out which content is editable, and we’ll show you how to use it." },
   { question: "Do you also handle domain, email and hosting?", answer: "Yes, those can be scoped alongside your website. Setup and ongoing support are agreed in the proposal. Domain renewals, hosting and third-party subscriptions such as Google Workspace are separate recurring costs." },
-  { question: "Can my website connect to an automation?", answer: "Yes. For example, a website enquiry can feed into your lead database or a follow-up workflow. We’ll first confirm the tools and access you have, then define exactly what the connection should do." },
-  { question: "How do we work out the cost and timeline?", answer: "Share a little about your business, the pages or features you need and whether you have content ready. I’ll then put together a scope, timeline and quote for you to review before we start." },
+  { question: "Can a website connect to an automation?", answer: "Yes. For example, a website enquiry can feed into your lead database or a follow-up workflow. We’ll first confirm the tools and access you have, then define exactly what the connection should do." },
+  { question: "How do we work out the cost and timeline?", answer: "Share a little about your business, the pages or features you need and whether you have content ready. We’ll then put together a scope, timeline and quote for you to review before we start." },
 ];
 
 export default function WebsitesPage() {
@@ -52,10 +52,10 @@ export default function WebsitesPage() {
           <div className={styles.heroCopy}>
             <p className="eyebrow"><span className={styles.dot} /> CUSTOM WEBSITES</p>
             <h1>A website that feels like you. <em>And works for your business.</em></h1>
-            <p className={styles.intro}>Give people a clear picture of what you do, a reason to trust you and an easy way to get in touch. I design and build your website around all three.</p>
+            <p className={styles.intro}>Give people a clear picture of what you do, a reason to trust you and an easy way to get in touch. We design and build your website around all three.</p>
             <div className={styles.actions}>
               <Link className="button button-orange" href="/#contact">Let’s discuss your website <Icon name="arrow-up-right" /></Link>
-              <a className="text-link" href="#website-projects">Explore my work <Icon name="arrow-down" /></a>
+              <a className="text-link" href="#website-projects">Explore our work <Icon name="arrow-down" /></a>
             </div>
           </div>
           <aside className={styles.pathCard} aria-label="The visitor journey">
@@ -81,7 +81,7 @@ export default function WebsitesPage() {
         <section className="section-wrap section-space" id="website-projects">
           <div className={styles.sectionHeading}>
             <div><p className="eyebrow">01 / SELECTED WORK</p><h2>Different businesses.<br /><em>Their own presence.</em></h2></div>
-            <p>Architecture, healthcare, manufacturing and consultancy. Explore websites I’ve worked on for real businesses.</p>
+            <p>Architecture, healthcare, water treatment and consultancy. Explore websites we’ve worked on for real businesses.</p>
           </div>
           <ProjectGallery />
         </section>
@@ -138,7 +138,7 @@ export default function WebsitesPage() {
         </section>
 
         <section className={`section-wrap ${styles.finalCta}`}>
-          <div><p className="eyebrow">A NEW WEBSITE. A CLEAR NEXT STEP.</p><h2>Let’s make your business<br /><em>easy to choose.</em></h2><p>Tell me what you do and what your current website is missing. We’ll work out what you need from there.</p></div>
+          <div><p className="eyebrow">A NEW WEBSITE. A CLEAR NEXT STEP.</p><h2>Let’s make your business<br /><em>easy to choose.</em></h2><p>Tell us what you do and what your current website is missing. We’ll work out what you need from there.</p></div>
           <Link className="button button-dark" href="/#contact">Talk about your website <Icon name="arrow-up-right" /></Link>
         </section>
       </main>

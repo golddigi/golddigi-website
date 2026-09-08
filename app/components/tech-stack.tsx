@@ -41,7 +41,7 @@ export function TechStack() {
   return (
     <section className={`section-wrap section-space ${styles.section}`} id="tools" aria-labelledby="stack-title">
       <details className={styles.disclosure}>
-        <summary><div><p className="eyebrow">BEHIND THE BUILD</p><h2 id="stack-title">Curious about the tools?</h2><p className={styles.hint}>Explore the platforms I use for websites, workflows, and business setup.</p></div><span className={styles.toggle} aria-hidden="true">+</span></summary>
+        <summary><div><p className="eyebrow">BEHIND THE BUILD</p><h2 id="stack-title">Curious about the tools?</h2><p className={styles.hint}>Explore the platforms we use for websites, workflows, and business setup.</p></div><span className={styles.toggle} aria-hidden="true">+</span></summary>
       <div className={styles.groups}>
         {groups.map((group) => (
           <article className={styles.group} key={group.label}>
@@ -57,7 +57,7 @@ export function TechStack() {
           </article>
         ))}
       </div>
-      <p className={styles.brandNote}>Logos identify the products used. Golddigi is an independent service provider.</p>
+      <p className={styles.brandNote}>Logos identify the products used. Each platform is provided and maintained by its respective company.</p>
       </details>
     </section>
   );

@@ -9,7 +9,7 @@ export function LocalPresence() {
         <p className={styles.eyebrow}><Icon name="map-pin" /> 01 / FOR LOCAL BUSINESSES</p>
         <h3 id="local-service-title">Google Business Profile<br /><em>optimization.</em></h3>
         <p className={styles.intro}>Your next customer could be searching nearby.</p>
-        <p className={styles.description}>Make it easier to understand your business and get in touch on Google Search and Maps. I help you improve your profile and keep it current.</p>
+        <p className={styles.description}>Make it easier to understand your business and get in touch on Google Search and Maps. We help improve your profile and keep it current.</p>
         <div className={styles.actions}>
           <Link href="/google-business-profile" className="button button-orange">Explore profile services <Icon name="arrow-up-right" /></Link>
           <span>Initial optimization & ongoing management</span>

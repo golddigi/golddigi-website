@@ -11,7 +11,7 @@ export function Footer() {
           <Link className="brand" href="/" aria-label="Golddigi home">
             <BrandMark /><span>golddigi<span className="orange-text">.</span></span>
           </Link>
-          <p className={styles.description}>Get found. Get chosen. Work smarter.<br />Built with you, by Apurv.</p>
+          <p className={styles.description}>Get found. Get chosen. Work smarter.<br />Digital support built around your business.</p>
         </div>
         <nav className={styles.links} aria-label="Footer navigation">
           <Link href="/websites">Custom websites</Link>
@@ -21,8 +21,8 @@ export function Footer() {
           <Link href="/#faq">FAQs</Link>
         </nav>
         <div className={styles.contact}>
-          <a href={`mailto:${siteContact.email}`}>{siteContact.email}<Icon name="arrow-up-right" /></a>
-          <a href={whatsappLink("Hi Apurv, I’d like to discuss a project with Golddigi.")} target="_blank" rel="noopener noreferrer">Chat on WhatsApp<Icon name="message" /></a>
+          <a href={`mailto:${siteContact.email}`}>Email us<Icon name="arrow-up-right" /></a>
+          <a href={whatsappLink("Hello, we’d like to discuss a project.")} target="_blank" rel="noopener noreferrer">Chat on WhatsApp<Icon name="message" /></a>
           <span>{siteContact.phone}</span>
         </div>
       </div>

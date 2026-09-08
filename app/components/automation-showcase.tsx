@@ -21,7 +21,7 @@ const workflows = {
     ],
     stack: ["WhatsApp Business Platform", "n8n", "OpenAI"],
     cta: "Discuss a WhatsApp agent",
-    enquiry: "Hi, I'd like to discuss a WhatsApp marketing agent for my business.",
+    enquiry: "Hello, we’d like to discuss a WhatsApp marketing agent for our business.",
   },
   email: {
     number: "02",
@@ -37,7 +37,7 @@ const workflows = {
     ],
     stack: ["Gmail", "n8n", "OpenAI"],
     cta: "Discuss an email reply agent",
-    enquiry: "Hi, I'd like to discuss an email reply agent for my business.",
+    enquiry: "Hello, we’d like to discuss an email reply agent for our business.",
   },
   indiamart: {
     number: "03",
@@ -53,7 +53,7 @@ const workflows = {
     ],
     stack: ["IndiaMART", "n8n", "Supabase"],
     cta: "Discuss IndiaMART lead capture",
-    enquiry: "Hi, I'd like to discuss saving IndiaMART leads to a database for my business.",
+    enquiry: "Hello, we’d like to discuss saving IndiaMART leads to a database for our business.",
   },
 } as const;
 
@@ -109,7 +109,7 @@ function EmailPreview() {
         <span className={styles.mailFolder}>INCOMING ENQUIRY</span>
         <h4>A question about your services</h4>
         <div className={styles.emailSender}><span className={styles.senderAvatar}>A</span><div><strong>Asha</strong><span>To: your business</span></div></div>
-        <p>Hi, I’m interested in your services. What information do you need from me to get started?</p>
+        <p>Hello, we’re interested in your services. What information do you need to get started?</p>
         <span className={styles.emailDivider}><WorkflowIcon name="spark" /><span>AI prepares a relevant answer</span></span>
         <div className={styles.replyCard}>
           <div className={styles.replyHeader}><span className={styles.replyAvatar}><WorkflowIcon name="email" /></span><strong>Your business</strong><span className={styles.sentLabel}><WorkflowIcon name="check" />Reply sent</span></div>
@@ -183,7 +183,7 @@ export function AutomationShowcase() {
         </div>
 
         <div className={styles.illustration} data-channel={selected}>
-          <div className={styles.illustrationLabel}><span aria-hidden="true" />Workflow illustration · based on systems I’ve built</div>
+          <div className={styles.illustrationLabel}><span aria-hidden="true" />Workflow illustration · based on systems we’ve built</div>
           <div className={styles.previewStage}>
             {selected === "whatsapp" && <WhatsAppPreview />}
             {selected === "email" && <EmailPreview />}

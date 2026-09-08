@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://golddigi.com"),
   title: "Golddigi — Websites, Google Business Profile & AI Automations",
   description:
-    "Custom websites, Google Business Profile optimization and management, and AI automations. Help customers find you, choose you, and get in touch. Built by Apurv.",
+    "Custom websites, Google Business Profile optimization and management, and AI automations that help customers find, choose, and contact your business.",
   openGraph: {
     title: "Golddigi — Websites, Google Business Profile & AI Automations",
     description: "Get found. Get chosen. Work smarter. Custom websites, Google Business Profile optimization, and practical AI automations for your business.",

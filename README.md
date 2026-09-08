@@ -1,6 +1,6 @@
 # Golddigi
 
-An independent studio website for custom websites, Google Business Profile optimization, and AI automations. Built with Next.js 16, React 19, and CSS, with responsive layouts and locally served brand assets.
+A digital services website for custom websites, Google Business Profile optimization, and AI automations. Built with Next.js 16, React 19, and CSS, with responsive layouts and locally served brand assets.
 
 ## Development
 

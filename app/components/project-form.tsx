@@ -38,13 +38,13 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
     const detailsInput = form.elements.namedItem("details") as HTMLTextAreaElement;
 
     if (!details) {
-      detailsInput.setCustomValidity("Tell me a little about what you need.");
+      detailsInput.setCustomValidity("Tell us a little about what you need.");
       detailsInput.reportValidity();
       return;
     }
 
     const message = [
-      "Hi Apurv, I’d like to discuss a project.",
+      "Hello, we’d like to discuss a project.",
       "",
       "Name: " + name,
       "Interested in: " + service,
@@ -67,8 +67,8 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
 
     setStatus(
       useEmail
-        ? "Your email app should open with your message. Review it and press Send to contact me."
-        : "WhatsApp should open with your message. Review it and tap Send to contact me.",
+        ? "Your email app should open with your message. Review it and press Send to contact us."
+        : "WhatsApp should open with your message. Review it and tap Send to contact us.",
     );
 
     try {
@@ -76,8 +76,8 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
     } catch {
       setStatus(
         useEmail
-          ? "I couldn’t open your email app. Please try again, or contact me at the email address below."
-          : "I couldn’t open WhatsApp. Please try again, or use email instead.",
+          ? "Your email app couldn’t be opened. Please try again, or contact us at the email address below."
+          : "WhatsApp couldn’t be opened. Please try again, or use email instead.",
       );
     }
   }
@@ -89,7 +89,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
           <Icon name="message" />
         </span>
         <div>
-          <h3>Tell me what you have in mind.</h3>
+          <h3>Tell us what you have in mind.</h3>
           <p>Prepare a message, then send it through WhatsApp or your email app. Fields are required unless marked optional.</p>
         </div>
       </div>
@@ -101,7 +101,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
       >
         <div className={styles.field}>
           <label className={styles.label} htmlFor={id + "-service"}>
-            What can I help with?
+            What can we help with?
           </label>
           <select
             className={styles.input + " " + styles.select}
@@ -159,7 +159,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
             className={styles.input + " " + styles.textarea}
             id={id + "-details"}
             name="details"
-            placeholder="Tell me about your website, Google Business Profile, or a task you’d like to make easier."
+            placeholder="Tell us about your website, Google Business Profile, or a task you’d like to make easier."
             rows={4}
             maxLength={2000}
             required
@@ -204,7 +204,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
 
       <div className={styles.directContact}>
         <p>
-          Or email me directly: <a href={emailLink}>{recipient}</a>
+          Or contact us directly: <a href={emailLink}>Send an email</a>
         </p>
         {bookingUrl && (
           <p>

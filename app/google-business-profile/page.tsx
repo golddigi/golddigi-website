@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 };
 
 const enquiryMessage = [
-  "Hi Apurv, I’d like to discuss my Google Business Profile.",
+  "Hello, we’d like to discuss our Google Business Profile.",
   "",
   "Business name: ",
   "City / area: ",
@@ -99,8 +99,8 @@ export default function GoogleBusinessProfilePage() {
           <div className={styles.heroCopy}>
             <p className="eyebrow"><span className="section-marker" /> GOOGLE BUSINESS PROFILE</p>
             <h1 id="profile-title">Be ready when your next customer <em>looks you up.</em></h1>
-            <p className={styles.intro}>Google Business Profile optimization and ongoing management for local businesses. I help you present the right information, keep it current and make it easier for people to get in touch.</p>
-            <div className={styles.heroActions}><a className="button button-orange" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss my Business Profile <Icon name="arrow-up-right" /></a><a className="text-link" href="#profile-services">See what I can help with <Icon name="arrow-down" /></a></div>
+            <p className={styles.intro}>Google Business Profile optimization and ongoing management for local businesses. We help you present the right information, keep it current and make it easier for people to get in touch.</p>
+            <div className={styles.heroActions}><a className="button button-orange" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss your Business Profile <Icon name="arrow-up-right" /></a><a className="text-link" href="#profile-services">See how we can help <Icon name="arrow-down" /></a></div>
             <p className={styles.heroNote}>For businesses that welcome customers or serve them in person.</p>
           </div>
           <ProfileIllustration />
@@ -113,24 +113,24 @@ export default function GoogleBusinessProfilePage() {
         </section>
 
         <section className="section-wrap section-space" id="profile-services" aria-labelledby="services-title">
-          <div className={styles.sectionHeading}><div><p className="eyebrow">01 / HOW I CAN HELP</p><h2 id="services-title">Get the details right.<br /><em>Then keep them right.</em></h2></div><p>Start with a focused improvement to your existing profile, or arrange ongoing help. We agree on the work and frequency before we begin.</p></div>
+          <div className={styles.sectionHeading}><div><p className="eyebrow">01 / HOW WE CAN HELP</p><h2 id="services-title">Get the details right.<br /><em>Then keep them right.</em></h2></div><p>Start with a focused improvement to your existing profile, or arrange ongoing help. We agree on the work and frequency before we begin.</p></div>
           <div className={styles.packages}>
             <article className={styles.package}>
               <div className={styles.packageTop}><span>THE STARTING POINT</span><span>01</span></div>
               <h3>Initial optimization</h3>
               <p>A considered refresh of your profile, so it gives customers a clearer picture of your business.</p>
               <ul>{initialTasks.map((task) => <li key={task}><Icon name="check" />{task}</li>)}</ul>
-              <a className="text-link" href={whatsappLink("Hi Apurv, I’d like help with initial Google Business Profile optimization.\n\nBusiness name: \nCity / area: \nProfile link (optional): ")} target="_blank" rel="noopener noreferrer">Discuss initial optimization <Icon name="arrow-up-right" /></a>
+              <a className="text-link" href={whatsappLink("Hello, we’d like help with initial Google Business Profile optimization.\n\nBusiness name: \nCity / area: \nProfile link (optional): ")} target="_blank" rel="noopener noreferrer">Discuss initial optimization <Icon name="arrow-up-right" /></a>
             </article>
             <article className={`${styles.package} ${styles.ongoing}`}>
               <div className={styles.packageTop}><span>THE REGULAR ATTENTION</span><span>02</span></div>
               <h3>Ongoing management</h3>
               <p>A regular point of contact for the updates and customer interactions your profile needs.</p>
               <ul>{ongoingTasks.map((task) => <li key={task}><Icon name="check" />{task}</li>)}</ul>
-              <a className="text-link" href={whatsappLink("Hi Apurv, I’d like to discuss ongoing Google Business Profile management.\n\nBusiness name: \nCity / area: \nProfile link (optional): ")} target="_blank" rel="noopener noreferrer">Discuss ongoing management <Icon name="arrow-up-right" /></a>
+              <a className="text-link" href={whatsappLink("Hello, we’d like to discuss ongoing Google Business Profile management.\n\nBusiness name: \nCity / area: \nProfile link (optional): ")} target="_blank" rel="noopener noreferrer">Discuss ongoing management <Icon name="arrow-up-right" /></a>
             </article>
           </div>
-          <p className={styles.scopeNote}>Google Business Profile itself is free. My fee covers the agreed optimization or management work. You can choose this service on its own.</p>
+          <p className={styles.scopeNote}>Google Business Profile itself is free. Our fee covers the agreed optimization or management work. You can choose this service on its own.</p>
         </section>
 
         <section className={styles.focusSection} aria-labelledby="focus-title">
@@ -149,18 +149,18 @@ export default function GoogleBusinessProfilePage() {
         <section className={`section-wrap ${styles.faqSection}`} aria-labelledby="faq-title">
           <div><p className="eyebrow">04 / GOOD TO KNOW</p><h2 id="faq-title">A clear picture.<br /><em>Before we start.</em></h2></div>
           <div className={styles.faqList}>
-            <details className={styles.faq}><summary>Can you guarantee a top position on Google?<Icon name="plus" /></summary><p>No. Local results depend on relevance, distance and how well-known a business is. I focus on accurate information and useful profile management, with progress reviewed using available data. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer">See Google’s explanation of local ranking.</a></p></details>
-            <details className={styles.faq}><summary>Isn’t Google Business Profile free?<Icon name="plus" /></summary><p>Yes. Google lets you create and manage an eligible Business Profile for free. You’re paying Golddigi for the agreed work and ongoing support. Golddigi is an independent service provider. <a href="https://business.google.com/us/support/" target="_blank" rel="noopener noreferrer">Read Google’s Business Profile FAQs.</a></p></details>
-            <details className={styles.faq}><summary>Can I use this service without buying a website?<Icon name="plus" /></summary><p>Yes. Profile optimization and management are available as standalone services. If you already have a website, we can work with that and check that the business information lines up.</p></details>
-            <details className={styles.faq}><summary>What if my business doesn’t have a storefront?<Icon name="plus" /></summary><p>A service-area business can be eligible if it visits or delivers to customers in person. We’ll check how you operate and whether a Business Profile is appropriate before agreeing on the work.</p></details>
-            <details className={styles.faq}><summary>What will you need from me?<Icon name="plus" /></summary><p>Your business name, area and existing profile link are enough for an initial conversation. For the work itself, we’ll agree on the access needed, confirm your business details and collect any photos or updates you want to share.</p></details>
-            <details className={styles.faq}><summary>How often will you update my profile?<Icon name="plus" /></summary><p>The management plan sets out the schedule, tasks and review process. We’ll match it to how often your business has relevant changes, new photos or customer feedback to respond to.</p></details>
+            <details className={styles.faq}><summary>Can you guarantee a top position on Google?<Icon name="plus" /></summary><p>No. Local results depend on relevance, distance and how well-known a business is. We focus on accurate information and useful profile management, with progress reviewed using available data. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer">See Google’s explanation of local ranking.</a></p></details>
+            <details className={styles.faq}><summary>Isn’t Google Business Profile free?<Icon name="plus" /></summary><p>Yes. Google lets you create and manage an eligible Business Profile for free. The fee covers the agreed optimization or management work and ongoing support. This is an independent service and is not affiliated with Google. <a href="https://business.google.com/us/support/" target="_blank" rel="noopener noreferrer">Read Google’s Business Profile FAQs.</a></p></details>
+            <details className={styles.faq}><summary>Is this service available without a website project?<Icon name="plus" /></summary><p>Yes. Profile optimization and management are available as standalone services. If you already have a website, we can work with that and check that the business information lines up.</p></details>
+            <details className={styles.faq}><summary>What if the business doesn’t have a storefront?<Icon name="plus" /></summary><p>A service-area business can be eligible if it visits or delivers to customers in person. We’ll check how you operate and whether a Business Profile is appropriate before agreeing on the work.</p></details>
+            <details className={styles.faq}><summary>What information is needed to begin?<Icon name="plus" /></summary><p>Your business name, area and existing profile link are enough for an initial conversation. For the work itself, we’ll agree on the access needed, confirm your business details and collect any photos or updates you want to share.</p></details>
+            <details className={styles.faq}><summary>How often can the profile be updated?<Icon name="plus" /></summary><p>The management plan sets out the schedule, tasks and review process. We’ll match it to how often your business has relevant changes, new photos or customer feedback to respond to.</p></details>
           </div>
         </section>
 
         <section className={`section-wrap ${styles.finalCta}`} aria-labelledby="contact-title">
           <div><p className="eyebrow">LET’S LOOK AT YOUR LOCAL PRESENCE</p><h2 id="contact-title">Make your next<br /><em>first impression count.</em></h2><p>Share your business name, city and profile link if you have one. We’ll discuss what needs attention and the right scope for you.</p></div>
-          <div className={styles.ctaActions}><a className="button button-dark" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss my Business Profile <Icon name="arrow-up-right" /></a><span>Opens WhatsApp with a message you can edit.</span><a className={styles.emailLink} href={`mailto:${siteContact.email}?subject=${encodeURIComponent("Google Business Profile enquiry")}`}>Prefer email? Get in touch <Icon name="arrow-up-right" /></a></div>
+          <div className={styles.ctaActions}><a className="button button-dark" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss your Business Profile <Icon name="arrow-up-right" /></a><span>Opens WhatsApp with a message you can edit.</span><a className={styles.emailLink} href={`mailto:${siteContact.email}?subject=${encodeURIComponent("Google Business Profile enquiry")}`}>Prefer email? Get in touch <Icon name="arrow-up-right" /></a></div>
         </section>
       </main>
       <Footer />

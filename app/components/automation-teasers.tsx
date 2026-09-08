@@ -13,7 +13,7 @@ export function AutomationTeasers() {
     <section className="possibilities" id="possibilities" aria-labelledby="automations-title">
       <div className="section-wrap section-space">
         <div className="section-heading">
-          <div><p className="eyebrow"><span className="section-marker" /> AUTOMATIONS I’VE BUILT</p><h2 id="automations-title">Less chasing.<br />More <em>moving forward.</em></h2></div>
+          <div><p className="eyebrow"><span className="section-marker" /> AUTOMATIONS WE’VE BUILT</p><h2 id="automations-title">Less chasing.<br />More <em>moving forward.</em></h2></div>
           <p className="section-description">Three practical systems for the conversations and enquiries that keep your business running.</p>
         </div>
         <div className={styles.grid}>

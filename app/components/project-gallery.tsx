@@ -26,7 +26,7 @@ export function ProjectGallery({ limit }: { limit?: number }) {
         ))}
       </div>
       {!limit && <div className={styles.archive}>
-        <h3>Other projects I’ve worked on</h3>
+        <h3>Other projects we’ve worked on</h3>
         <p>These websites are currently unavailable to preview.</p>
         <div><span>Soni Hospital</span><span>Healthcare website</span></div>
         <div><span>Divine Consultancy</span><span>Industrial consultancy website</span></div>

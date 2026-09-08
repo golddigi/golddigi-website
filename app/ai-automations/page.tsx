@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/ai-automations" },
   openGraph: {
     title: "AI Automations for Conversations & Leads | Golddigi",
-    description: "WhatsApp outreach and replies, email response agents, and IndiaMART leads organized in your database. Explore the systems I’ve built.",
+    description: "WhatsApp outreach and replies, email response agents, and IndiaMART leads organized in your database. Explore the systems we’ve built.",
     url: "/ai-automations",
   },
 };
@@ -26,10 +26,10 @@ const steps = [
 ];
 
 const faqs = [
-  { question: "Are these systems you have actually built?", answer: "Yes. I’ve built WhatsApp outreach and reply agents, an agent that replies to emails, and a workflow that saves new IndiaMART leads to a database. The visuals on this page use sample conversations and lead details to explain how those systems work." },
+  { question: "Are these systems you have actually built?", answer: "Yes. We’ve built WhatsApp outreach and reply agents, an agent that replies to emails, and a workflow that saves new IndiaMART leads to a database. The visuals on this page use sample conversations and lead details to explain how those systems work." },
   { question: "Do the WhatsApp and email agents send replies automatically?", answer: "Yes, the reply agents can generate and send responses. For your project, we’ll agree on the information the agent can use, the situations it should handle, and which conversations need your attention before enabling automatic replies." },
   { question: "Does the IndiaMART workflow also contact the leads?", answer: "The workflow shown here captures new IndiaMART leads and stores them in a database. Follow-up messages, reminders, or other actions can be discussed as a separate extension." },
-  { question: "Can you use my existing accounts?", answer: "We start with the tools and accounts you already use. I’ll check the available access and integrations before agreeing on the setup. You don’t need every tool shown on this website." },
+  { question: "Can you use existing accounts?", answer: "We start with the tools and accounts you already use. We’ll check the available access and integrations before agreeing on the setup. You don’t need every tool shown on this website." },
   { question: "What is included in the cost?", answer: "The project quote sets out the workflow, integrations, testing, and handover. Hosting, messaging, AI usage, and other third-party subscriptions are discussed separately, along with any ongoing support." },
 ];
 
@@ -47,14 +47,14 @@ export default function AutomationsPage() {
           <div className={styles.heroAside}>
             <BrandMark />
             <p>Stay in the conversation, without doing every step yourself.</p>
-            <span>I build agents that respond on WhatsApp and email, and workflows that turn incoming IndiaMART enquiries into organized lead records.</span>
+            <span>We build agents that respond on WhatsApp and email, and workflows that turn incoming IndiaMART enquiries into organized lead records.</span>
             <a className="button button-orange" href="#automation-showcase">See how they work <Icon name="arrow-down" /></a>
           </div>
         </section>
 
         <section className={`section-wrap ${styles.showcaseSection}`} id="automation-showcase" aria-labelledby="showcase-title">
           <div className={styles.showcaseHeading}>
-            <div><p className="eyebrow">AUTOMATIONS I’VE BUILT</p><h2 id="showcase-title">Pick a task.<br /><em>Follow the flow.</em></h2></div>
+            <div><p className="eyebrow">AUTOMATIONS WE’VE BUILT</p><h2 id="showcase-title">Pick a task.<br /><em>Follow the flow.</em></h2></div>
             <p>Explore what happens from the first message to the next step. Each setup is adapted to the business using it.</p>
           </div>
           <AutomationShowcase />
@@ -82,8 +82,8 @@ export default function AutomationsPage() {
         </section>
 
         <section className={`section-wrap ${styles.cta}`} aria-labelledby="automation-contact-title">
-          <div><p className="eyebrow">LET’S FIND YOUR STARTING POINT</p><h2 id="automation-contact-title">What would you love<br />to do <em>less of?</em></h2><p>Tell me about the conversations, enquiries, or repetitive work taking up your day.</p></div>
-          <div className={styles.ctaActions}><a className="button button-dark" href={whatsappLink("Hi Apurv, I’d like to discuss an automation for my business.")} target="_blank" rel="noopener noreferrer">Discuss an automation <Icon name="arrow-up-right" /></a><Link className="text-link" href="/#contact">Share a few details first <Icon name="arrow-right" /></Link><span>Opens a conversation on WhatsApp.</span></div>
+          <div><p className="eyebrow">LET’S FIND YOUR STARTING POINT</p><h2 id="automation-contact-title">What would you love<br />to do <em>less of?</em></h2><p>Tell us about the conversations, enquiries, or repetitive work taking up your day.</p></div>
+          <div className={styles.ctaActions}><a className="button button-dark" href={whatsappLink("Hello, we’d like to discuss an automation for our business.")} target="_blank" rel="noopener noreferrer">Discuss an automation <Icon name="arrow-up-right" /></a><Link className="text-link" href="/#contact">Share a few details first <Icon name="arrow-right" /></Link><span>Opens a conversation on WhatsApp.</span></div>
         </section>
       </main>
       <Footer />

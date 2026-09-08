@@ -11,7 +11,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## UI and content guidance
 
 - Preserve the warm off-white background, orange accents, serif emphasis, and dark green, blue, and terracotta service cards.
-- Write in Apurv's first-person voice. Use concrete deliverables and customer tasks; avoid repeated generic promises. Do not invent prices, turnaround times, testimonials, performance claims, or ranking guarantees.
+- Use a clear agency voice with “we,” “our,” and “us.” Do not name the owner, use first-person singular language, describe the business as a team or founder-led studio, or repeatedly name Golddigi in body copy. Use concrete deliverables and customer tasks; avoid repeated generic promises. Do not invent prices, turnaround times, testimonials, performance claims, or ranking guarantees.
 - Keep service choices and contact actions easy to find. Explain what happens after an enquiry and disclose when a button opens WhatsApp or an email app; never imply a message was sent by the site.
 - Keep primary body copy at least 15px on small screens, service labels at least 11px, and interactive targets at least 44px. Preserve visible keyboard focus, reduced motion support, semantic headings, and labelled inputs.
 - Switch to the collapsible navigation before desktop links become crowded. Check Escape, focus return, active-page links, and menu scrolling on short screens.
@@ -20,7 +20,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## Follow-up improvements requiring real business material
 
-- Actual screenshots are now included for the two available sites. Add detailed project scope and Apurv's specific contribution when supplied.
+- Actual screenshots are now included for the two available sites. Add detailed project scope and the business’s specific contribution when supplied.
 - Add client testimonials only with permission and verified attribution.
 - Add indicative pricing or typical delivery windows once actual packages and ongoing costs are agreed.
 - Add relevant privacy information if a server-side contact form or analytics is introduced; describe the actual data handling.
