@@ -7,5 +7,5 @@
 .contact svg { width: 15px; height: 15px; }
 .contact>span { font-size: 11px; color: var(--muted); }
 .contact a:hover,.links a:hover { color: #b6371b; }
-@media(max-width:700px) { .top { grid-template-columns: 1fr 1fr; gap: 30px 20px; } .top>div:first-child { grid-column: 1/-1; } .contact,.links { font-size: 11px; } .description { font-size: 11px; } }
+@media(max-width:700px) { .top { grid-template-columns: 1fr 1fr; gap: 30px 20px; } .top>div:first-child { grid-column: 1/-1; } .contact,.links { gap: 4px; font-size: 12px; } .contact a,.links a { display: flex; align-items: center; min-height: 44px; } .description { font-size: 12px; } }
 @media(max-width:380px) { .top { grid-template-columns: 1fr; } }

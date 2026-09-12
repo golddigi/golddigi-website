@@ -114,23 +114,6 @@ export default function Home() {
           </div>
           <HeroVisual />
         </section>
-        <div
-          className="benefit-strip section-wrap"
-          aria-label="What you can expect"
-        >
-          <p>
-            <Icon name="map-pin" />
-            <span>Connect with nearby customers</span>
-          </p>
-          <p>
-            <Icon name="browser" />
-            <span>Make a stronger first impression</span>
-          </p>
-          <p>
-            <Icon name="workflow" />
-            <span>Make everyday work easier</span>
-          </p>
-        </div>
 
         <section
           className="services section-wrap section-space"
@@ -199,7 +182,10 @@ export default function Home() {
             <p className="section-description">A closer look at websites we’ve worked on, from interior design to water treatment and industrial supply. Explore the actual sites below.</p>
           </div>
           <ProjectGallery limit={2} />
-          <a className="text-link selected-work-link" href="/websites#website-projects">See all website projects <Icon name="arrow-up-right" /></a>
+          <div className="selected-work-actions">
+            <a className="text-link selected-work-link" href="/websites#website-projects">See all website projects <Icon name="arrow-up-right" /></a>
+            <a className="button button-dark" href="#contact">Discuss your project <Icon name="arrow-down" /></a>
+          </div>
         </section>
 
         <AutomationTeasers />

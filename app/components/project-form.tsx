@@ -25,6 +25,7 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
   const [status, setStatus] = useState("");
   const recipient = contactEmail?.trim() || siteContact.email;
   const emailLink = "mailto:" + encodeURIComponent(recipient);
+  const directWhatsappLink = whatsappLink("Hello, we’d like to discuss a project.");
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -67,8 +68,8 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
 
     setStatus(
       useEmail
-        ? "Your email app should open with your message. Review it and press Send to contact us."
-        : "WhatsApp should open with your message. Review it and tap Send to contact us.",
+        ? "Opening your email app. Review the message and press Send to contact us. If nothing opens, use the direct email link below."
+        : "Opening WhatsApp. Review the message and tap Send to contact us. If nothing opens, use the direct WhatsApp link below.",
     );
 
     try {
@@ -203,9 +204,12 @@ export function ProjectForm({ contactEmail, bookingUrl }: ProjectFormProps) {
       </p>
 
       <div className={styles.directContact}>
-        <p>
-          Or contact us directly: <a href={emailLink}>Send an email</a>
-        </p>
+        <p>Contact us directly:</p>
+        <div className={styles.directActions}>
+          <a href={directWhatsappLink} target="_blank" rel="noopener noreferrer">Open WhatsApp</a>
+          <a href={emailLink}>Send an email</a>
+        </div>
+        <p className={styles.directNote}>These links open WhatsApp or your email app. You review and send the message there.</p>
         {bookingUrl && (
           <p>
             Prefer a call?{" "}

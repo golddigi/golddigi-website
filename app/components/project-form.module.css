@@ -217,7 +217,16 @@
   margin: 0;
 }
 
+.directActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+
 .directContact a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
   color: #242723;
   overflow-wrap: anywhere;
   text-decoration: underline;
@@ -229,6 +238,11 @@
   color: #b84021;
 }
 
+.directNote {
+  color: #707369;
+  font-size: 12px;
+}
+
 @media (max-width: 640px) {
   .fields {
     grid-template-columns: 1fr;
@@ -237,6 +251,19 @@
 
   .input {
     font-size: 16px;
+  }
+
+  .intro p,
+  .label,
+  .directContact,
+  .status {
+    font-size: 14px;
+  }
+
+  .note,
+  .directNote,
+  .optional {
+    font-size: 13px;
   }
 }
 
