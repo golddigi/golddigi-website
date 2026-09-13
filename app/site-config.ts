@@ -1,3 +1,5 @@
+export const siteUrl = "https://golddigi.com";
+
 export const siteContact = {
   email: "apurv@golddigi.com",
   phone: "+91 74109 98149",
