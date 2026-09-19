@@ -11,10 +11,11 @@ export function Footer() {
           <Link className="brand" href="/" aria-label="Golddigi home">
             <BrandMark /><span>golddigi<span className="orange-text">.</span></span>
           </Link>
-          <p className={styles.description}>Get found. Get chosen. Work smarter.<br />Digital support built around your business.</p>
+          <p className={styles.description}>Based in Bhiwadi.<br />Websites, local presence and automations, delivered remotely too.</p>
         </div>
         <nav className={styles.links} aria-label="Footer navigation">
           <Link href="/websites">Custom websites</Link>
+          <Link href="/websites/bhiwadi">Website design in Bhiwadi</Link>
           <Link href="/google-business-profile">Google Business Profile</Link>
           <Link href="/ai-automations">AI automations</Link>
           <Link href="/#business-setup">Business essentials</Link>

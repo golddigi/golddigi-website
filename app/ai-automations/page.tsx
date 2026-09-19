@@ -1,3 +1,5 @@
+import { pageMetadata } from "../seo";
+import { StructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Header } from "../components/header";
@@ -7,16 +9,7 @@ import { Icon, BrandMark } from "../components/icons";
 import { whatsappLink } from "../site-config";
 import styles from "./automations.module.css";
 
-export const metadata: Metadata = {
-  title: "WhatsApp, Email & IndiaMART Automations | Golddigi",
-  description: "Explore AI agents for WhatsApp conversations and email replies, plus automated IndiaMART lead capture. Practical n8n workflows built around your business.",
-  alternates: { canonical: "/ai-automations" },
-  openGraph: {
-    title: "AI Automations for Conversations & Leads | Golddigi",
-    description: "WhatsApp outreach and replies, email response agents, and IndiaMART leads organized in your database. Explore the systems we’ve built.",
-    url: "/ai-automations",
-  },
-};
+export const metadata: Metadata = pageMetadata("/ai-automations");
 
 const steps = [
   { title: "Start with the task.", description: "We look at how enquiries arrive, what you repeat, and where an automation would be useful." },
@@ -36,13 +29,14 @@ const faqs = [
 export default function AutomationsPage() {
   return (
     <>
+      <StructuredData path="/ai-automations" />
       <a href="#main" className="skip-link">Skip to content</a>
       <Header />
       <main id="main">
         <section className={`section-wrap ${styles.hero}`} aria-labelledby="automation-title">
           <div>
             <p className="eyebrow"><span className="section-marker" /> AI AUTOMATIONS</p>
-            <h1 id="automation-title">Your conversations.<br />Your leads.<br /><em>Less busywork.</em></h1>
+            <h1 id="automation-title">AI automations.<br />WhatsApp, email.<br /><em>IndiaMART leads.</em></h1>
           </div>
           <div className={styles.heroAside}>
             <BrandMark />

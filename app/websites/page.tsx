@@ -1,3 +1,5 @@
+import { pageMetadata } from "../seo";
+import { StructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "../components/footer";
@@ -6,18 +8,7 @@ import { BrandMark, Icon } from "../components/icons";
 import { ProjectGallery } from "../components/project-gallery";
 import styles from "./websites.module.css";
 
-export const metadata: Metadata = {
-  title: "Custom Websites for Your Business | Golddigi",
-  description:
-    "Custom business websites with clear content, thoughtful design and an easy path to enquire. Explore Golddigi’s work and website, CMS, hosting and business setup services.",
-  alternates: { canonical: "/websites" },
-  openGraph: {
-    title: "Custom Websites for Your Business | Golddigi",
-    description:
-      "Custom websites with clear content, thoughtful design and an easy path to enquire. Explore real projects and find the right website setup for your business.",
-    url: "/websites",
-  },
-};
+export const metadata: Metadata = pageMetadata("/websites");
 
 const deliverables = [
   { title: "A design that fits your business", text: "A considered visual direction, with layouts, colours and typography that suit what you do and who you serve." },
@@ -45,13 +36,14 @@ const faqs = [
 export default function WebsitesPage() {
   return (
     <>
+      <StructuredData path="/websites" />
       <a href="#main" className="skip-link">Skip to content</a>
       <Header />
       <main id="main">
         <section className={`section-wrap ${styles.hero}`}>
           <div className={styles.heroCopy}>
             <p className="eyebrow"><span className={styles.dot} /> CUSTOM WEBSITES</p>
-            <h1>A website that feels like you. <em>And works for your business.</em></h1>
+            <h1>Website design &amp; development. <em>Built for your business.</em></h1>
             <p className={styles.intro}>Give people a clear picture of what you do, a reason to trust you and an easy way to get in touch. We design and build your website around all three.</p>
             <div className={styles.actions}>
               <Link className="button button-orange" href="/#contact">Let’s discuss your website <Icon name="arrow-up-right" /></Link>
@@ -122,6 +114,13 @@ export default function WebsitesPage() {
           <div className={styles.automationLink}>
             <span><Icon name="workflow" /><strong>What happens after an enquiry arrives?</strong></span>
             <Link href="/ai-automations">Explore AI automations <Icon name="arrow-up-right" /></Link>
+          </div>
+        </section>
+
+        <section className="section-wrap section-space" aria-labelledby="remote-title">
+          <div className={`${styles.sectionHeading} ${styles.remoteHeading}`}>
+            <div><h2 id="remote-title">Based in Bhiwadi.<br /><em>Built together, remotely.</em></h2></div>
+            <div><p className={styles.intro}>We welcome remote website projects from Manesar, Chopanki, Neemrana, Gurugram (Gurgaon), Jaipur, Delhi and Indore. Share your brief and content online, review the website as it develops, and agree on the launch and handover together.</p><Link className="text-link" href="/websites/bhiwadi">Website design in Bhiwadi <Icon name="arrow-up-right" /></Link></div>
           </div>
         </section>
 

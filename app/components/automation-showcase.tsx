@@ -1,6 +1,7 @@
 "use client";
 
 import { useId, useState } from "react";
+import { whatsappLink } from "../site-config";
 import styles from "./automation-showcase.module.css";
 
 type WorkflowKey = "whatsapp" | "email" | "indiamart";
@@ -147,13 +148,12 @@ function IndiaMartPreview() {
 export function AutomationShowcase() {
   const [selected, setSelected] = useState<WorkflowKey>("whatsapp");
   const panelId = useId();
-  const workflow = workflows[selected];
 
   return (
     <div className={styles.showcase}>
       <div className={styles.selector} aria-label="Choose an automation to explore">
         {(Object.keys(workflows) as WorkflowKey[]).map((key) => (
-          <button className={styles.selectorButton} type="button" key={key} aria-pressed={selected === key} aria-controls={panelId} onClick={() => setSelected(key)}>
+          <button className={styles.selectorButton} type="button" key={key} aria-pressed={selected === key} aria-controls={`${panelId}-${key}`} onClick={() => setSelected(key)}>
             <span className={`${styles.channelIcon} ${styles[key]}`}><WorkflowIcon name={key} /></span>
             <span className={styles.selectorCopy}><strong>{workflows[key].name}</strong><span>{workflows[key].summary}</span></span>
             <span className={styles.selectorArrow} aria-hidden="true">↗</span>
@@ -161,7 +161,9 @@ export function AutomationShowcase() {
         ))}
       </div>
 
-      <div className={styles.panel} id={panelId}>
+      {(Object.keys(workflows) as WorkflowKey[]).map((key) => {
+        const workflow = workflows[key];
+        return <div className={styles.panel} id={`${panelId}-${key}`} key={key} hidden={selected !== key}>
         <div className={styles.details}>
           <div className={styles.detailIntro} aria-live="polite" aria-atomic="true">
             <span className={styles.workflowNumber}>THE WORKFLOW <span>{workflow.number} / 03</span></span>
@@ -179,19 +181,20 @@ export function AutomationShowcase() {
           </ol>
 
           <div className={styles.stack}><span>Built with</span><ul aria-label="Tools used">{workflow.stack.map((tool) => <li key={tool}>{tool}</li>)}</ul></div>
-          <a className={styles.enquiryLink} href={`https://wa.me/917410998149?text=${encodeURIComponent(workflow.enquiry)}`} target="_blank" rel="noopener noreferrer">{workflow.cta}<span aria-hidden="true">↗</span><span className={styles.srOnly}> (opens WhatsApp in a new tab)</span></a>
+          <a className={styles.enquiryLink} href={whatsappLink(workflow.enquiry)} target="_blank" rel="noopener noreferrer">{workflow.cta}<span aria-hidden="true">↗</span><span className={styles.srOnly}> (opens WhatsApp in a new tab)</span></a>
         </div>
 
-        <div className={styles.illustration} data-channel={selected}>
+        <div className={styles.illustration} data-channel={key}>
           <div className={styles.illustrationLabel}><span aria-hidden="true" />Workflow illustration · based on systems we’ve built</div>
           <div className={styles.previewStage}>
-            {selected === "whatsapp" && <WhatsAppPreview />}
-            {selected === "email" && <EmailPreview />}
-            {selected === "indiamart" && <IndiaMartPreview />}
+            {key === "whatsapp" && <WhatsAppPreview />}
+            {key === "email" && <EmailPreview />}
+            {key === "indiamart" && <IndiaMartPreview />}
           </div>
-          <div className={styles.sampleLabel}>{selected === "whatsapp" ? "Sample conversation" : selected === "email" ? "Sample email" : "Sample lead"}<span aria-hidden="true">✳</span></div>
+          <div className={styles.sampleLabel}>{key === "whatsapp" ? "Sample conversation" : key === "email" ? "Sample email" : "Sample lead"}<span aria-hidden="true">✳</span></div>
         </div>
-      </div>
+      </div>;
+      })}
     </div>
   );
 }

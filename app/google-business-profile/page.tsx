@@ -1,3 +1,5 @@
+import { pageMetadata } from "../seo";
+import { StructuredData } from "../components/structured-data";
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Footer } from "../components/footer";
@@ -6,18 +8,7 @@ import { BrandMark, Icon } from "../components/icons";
 import { siteContact, whatsappLink } from "../site-config";
 import styles from "./business-profile.module.css";
 
-export const metadata: Metadata = {
-  title: "Google Business Profile Optimization & Management | Golddigi",
-  description:
-    "Google Business Profile optimization and ongoing management for local businesses. Get help with business details, services, photos, review replies and useful performance reporting.",
-  alternates: { canonical: "/google-business-profile" },
-  openGraph: {
-    title: "Google Business Profile Optimization & Management | Golddigi",
-    description:
-      "Help local customers understand your business and take the next step. Explore Google Business Profile optimization and ongoing management with Golddigi.",
-    url: "/google-business-profile",
-  },
-};
+export const metadata: Metadata = pageMetadata("/google-business-profile");
 
 const enquiryMessage = [
   "Hello, we’d like to discuss our Google Business Profile.",
@@ -92,13 +83,14 @@ export default function GoogleBusinessProfilePage() {
 
   return (
     <>
+      <StructuredData path="/google-business-profile" />
       <a href="#main" className="skip-link">Skip to content</a>
       <Header />
       <main id="main">
         <section className={`section-wrap ${styles.hero}`} aria-labelledby="profile-title">
           <div className={styles.heroCopy}>
             <p className="eyebrow"><span className="section-marker" /> GOOGLE BUSINESS PROFILE</p>
-            <h1 id="profile-title">Be ready when your next customer <em>looks you up.</em></h1>
+            <h1 id="profile-title">Google Business Profile <em>optimization &amp; management.</em></h1>
             <p className={styles.intro}>Google Business Profile optimization and ongoing management for local businesses. We help you present the right information, keep it current and make it easier for people to get in touch.</p>
             <div className={styles.heroActions}><a className="button button-orange" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss your Business Profile <Icon name="arrow-up-right" /></a><a className="text-link" href="#profile-services">See how we can help <Icon name="arrow-down" /></a></div>
             <p className={styles.heroNote}>For businesses that welcome customers or serve them in person.</p>

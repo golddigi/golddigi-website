@@ -14,7 +14,10 @@
 .caption { padding-top: 24px; }
 .category { display: block; margin-bottom: 12px; font-size: 11px; text-transform: uppercase; letter-spacing: .8px; color: #65675f; }
 .caption h3 { margin: 0 0 10px; font-size: 29px; font-weight: 500; letter-spacing: -1px; }
+.caption h3 a { text-decoration-thickness: 1px; text-underline-offset: 5px; }
 .caption p { max-width: 47ch; margin: 0; font-size: 15px; line-height: 1.75; color: #65675f; }
+.detailsLink { display: inline-flex; align-items: center; gap: 9px; min-height: 44px; margin-top: 12px; font-size: 13px; font-weight: 600; }
+.detailsLink svg { width: 15px; height: 15px; }
 .archive { margin-top: 48px; border-top: 1px solid var(--line); padding-top: 28px; }
 .archive h3 { font-size: 19px; font-weight: 500; margin: 0 0 8px; }
 .archive p { font-size: 14px; color: var(--muted); margin-bottom: 20px; }

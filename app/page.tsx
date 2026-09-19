@@ -1,3 +1,5 @@
+import { pageMetadata } from "./seo";
+import { StructuredData } from "./components/structured-data";
 import { Header } from "./components/header";
 import { HeroVisual } from "./components/hero-visual";
 import { Icon, BrandMark } from "./components/icons";
@@ -11,9 +13,7 @@ import { siteContact } from "./site-config";
 import Link from "next/link";
 import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  alternates: { canonical: "/" },
-};
+export const metadata: Metadata = pageMetadata("/");
 
 const faqs = [
   {
@@ -74,6 +74,7 @@ const steps = [
 export default function Home() {
   return (
     <>
+      <StructuredData path="/" />
       <a className="skip-link" href="#main-content">
         Skip to content
       </a>
@@ -98,7 +99,8 @@ export default function Home() {
             <p className="hero-description">
               Custom websites, Google Business Profile optimization, and AI
               automations for small businesses. Practical support to improve your
-              online presence and reduce repetitive work.
+              online presence and reduce repetitive work. Based in Bhiwadi,
+              we also work with businesses remotely.
             </p>
             <div className="hero-actions">
               <a className="button button-orange" href="#contact">

@@ -4,15 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Golddigi — Websites, Google Business Profile & AI Automations",
-  description:
-    "Custom websites, Google Business Profile optimization and management, and AI automations that help customers find, choose, and contact your business.",
-  openGraph: {
-    title: "Golddigi — Websites, Google Business Profile & AI Automations",
-    description: "Get found. Get chosen. Work smarter. Custom websites, Google Business Profile optimization, and practical AI automations for your business.",
-    type: "website",
-    locale: "en_IN",
-    siteName: "Golddigi",
+  verification: {
+    google: process.env.GOOGLE_SITE_VERIFICATION,
+    other: process.env.BING_SITE_VERIFICATION
+      ? { "msvalidate.01": process.env.BING_SITE_VERIFICATION }
+      : undefined,
   },
   icons: { icon: "/icon.svg", shortcut: "/icon.svg" },
 };

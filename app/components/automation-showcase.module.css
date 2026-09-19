@@ -161,3 +161,11 @@
 @media (prefers-reduced-motion: reduce) {
   .selectorButton, .enquiryLink { transition: none; }
 }
+
+/* Keep inactive, server-rendered panels out of the visual/accessibility tree. */
+.panel[hidden] { display: none; }
+
+/* Keep service information readable on narrow screens. */
+@media (max-width: 850px) {
+  .detailIntro > p, .steps p { font-size: 15px; }
+}

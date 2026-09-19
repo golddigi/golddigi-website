@@ -1,8 +1,8 @@
 import type { MetadataRoute } from "next";
-import { siteUrl } from "./site-config";
+import { absolutePageUrl, publicPages, type PublicPagePath } from "./seo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return ["", "/websites", "/google-business-profile", "/ai-automations"].map(
-    (path) => ({ url: `${siteUrl}${path}` }),
+  return (Object.keys(publicPages) as PublicPagePath[]).map(
+    (path) => ({ url: absolutePageUrl(path) }),
   );
 }
