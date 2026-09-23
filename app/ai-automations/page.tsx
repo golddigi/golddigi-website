@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Header } from "../components/header";
 import { Footer } from "../components/footer";
 import { AutomationShowcase } from "../components/automation-showcase";
+import { CaseStudyTeaser } from "../components/case-study-teaser";
 import { Icon, BrandMark } from "../components/icons";
 import { whatsappLink } from "../site-config";
 import styles from "./automations.module.css";
@@ -53,6 +54,8 @@ export default function AutomationsPage() {
           </div>
           <AutomationShowcase />
         </section>
+
+        <CaseStudyTeaser />
 
         <section className={styles.connections} aria-labelledby="connections-title">
           <div className={`section-wrap ${styles.connectionInner}`}>

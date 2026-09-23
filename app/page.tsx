@@ -8,6 +8,7 @@ import { AutomationTeasers } from "./components/automation-teasers";
 import { BusinessEssentials } from "./components/business-essentials";
 import { TechStack } from "./components/tech-stack";
 import { ProjectGallery } from "./components/project-gallery";
+import { CaseStudyTeaser } from "./components/case-study-teaser";
 import { Footer } from "./components/footer";
 import { siteContact } from "./site-config";
 import Link from "next/link";
@@ -191,6 +192,7 @@ export default function Home() {
         </section>
 
         <AutomationTeasers />
+        <CaseStudyTeaser compact />
         <BusinessEssentials />
 
         <section

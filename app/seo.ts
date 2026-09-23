@@ -34,6 +34,12 @@ export const publicPages = {
     name: "AI automation services",
     description: "Explore AI agents for WhatsApp conversations and email replies, plus automated IndiaMART lead capture. Practical n8n workflows built around your business.",
   },
+  "/case-studies/whatsapp-campaign-water-treatment": {
+    kind: "case-study",
+    title: "WhatsApp Campaign Case Study: ₹189.88 to ₹4 Lakh Sales | Golddigi",
+    name: "Water treatment WhatsApp campaign case study",
+    description: "See how two months of website, catalogue, search and Google Business Profile work supported a three-day WhatsApp campaign and ₹4 lakh in client-reported gross sales.",
+  },
   "/work/shivom-designs": {
     kind: "project",
     title: "Shivom Designs Website Project | Golddigi",
