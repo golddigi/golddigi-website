@@ -39,7 +39,7 @@ export default function WhatsAppCampaignCaseStudy() {
             <div className={styles.heroCopy}>
               <Link className="text-link" href="/ai-automations">AI automations <Icon name="arrow-right" /></Link>
               <h1>₹189.88 in message spend.<br /><em>₹4 lakh in reported gross sales.</em></h1>
-              <p className={styles.intro}>A three-day WhatsApp campaign for a water-treatment chemicals and industrial RO supplier, supported by two months of work across its website, catalogue, search presence, and Google Business Profile.</p>
+              <p className={styles.intro}>A targeted three-day WhatsApp campaign sent to selected recipients for a water-treatment chemicals and industrial RO supplier, supported by two months of work across its website, catalogue, search presence, and Google Business Profile.</p>
             </div>
             <dl className={styles.heroFacts}>
               <div><dt>Audience</dt><dd>250 recipients</dd></div>
@@ -67,7 +67,7 @@ export default function WhatsAppCampaignCaseStudy() {
           <div className={`section-wrap ${styles.body}`}>
             <aside className={styles.summary} aria-label="Case study summary">
               <p>THE SHORT VERSION</p>
-              <strong>The campaign created attention. The digital foundation helped that attention become trust.</strong>
+              <strong>Relevant people received the message. The digital foundation gave them credible information when they checked the business.</strong>
             </aside>
             <div className={styles.narrative}>
               <section aria-labelledby="challenge-title">
@@ -90,22 +90,23 @@ export default function WhatsAppCampaignCaseStudy() {
               </section>
 
               <section aria-labelledby="campaign-title">
-                <h2 id="campaign-title">Then the three-day campaign started.</h2>
-                <p>The campaign targeted an audience of 250 recipients. The supplied report shows that 223 messages were sent, 220 were delivered, and 154 were read. Six recipients sent a unique reply.</p>
+                <h2 id="campaign-title">The campaign went to selected people—not a broad list.</h2>
+                <p>The audience was deliberately limited to 250 selected recipients. This targeting was central to the campaign: the message reached people chosen for their relevance to the client’s offer instead of trying to create interest from an unfiltered mass audience.</p>
+                <p>The supplied report shows that 223 messages were sent, 220 were delivered, and 154 were read. Six recipients sent a unique reply.</p>
                 <p>When interested recipients wanted to check the supplier, they could move beyond the message to a detailed website, product catalogue, certificates, and an active Google Business Profile. The reported activity included 25 catalogue views, 12 website visits, and six phone calls.</p>
               </section>
 
               <section aria-labelledby="lesson-title">
-                <h2 id="lesson-title">The result came from the system, not one message.</h2>
-                <p>The client reported six customers and ₹4 lakh in gross sales associated with the campaign period. We do not present the message spend as the sole cause of those sales. The campaign prompted attention; the website, catalogue, search presence, Google profile, and the client’s sales conversations all supported the decision.</p>
-                <blockquote>Make the promotion easy to notice. Make the business behind it easy to verify.</blockquote>
+                <h2 id="lesson-title">Targeting created relevance. The wider system supported the decision.</h2>
+                <p>The client reported six customers and ₹4 lakh in gross sales associated with the campaign period. We do not present the ₹189.88 spend alone as the cause of those sales. The selected audience made the campaign relevant; the message prompted attention; and the website, catalogue, search presence, Google profile, and the client’s sales conversations helped recipients evaluate the business.</p>
+                <blockquote>Reach the right people, then make the business behind the message easy to verify.</blockquote>
               </section>
             </div>
           </div>
 
           <section className={`section-wrap ${styles.note}`} aria-labelledby="context-title">
             <h2 id="context-title">Result context</h2>
-            <p>This case study describes one campaign and does not promise the same result for another business. ₹4 lakh is client-reported gross sales, not profit. Website visits, catalogue views, replies, calls, and customers are reported outcomes and may overlap; they are not presented as a strict sequential funnel.</p>
+            <p>This case study describes one targeted campaign and does not promise the same result for another business. ₹4 lakh is client-reported gross sales, not profit. Audience selection, offer relevance, timing, the client’s sales process, and the supporting digital presence can all affect results. Website visits, catalogue views, replies, calls, and customers are reported outcomes and may overlap; they are not presented as a strict sequential funnel.</p>
           </section>
 
           <section className={`section-wrap ${styles.cta}`} aria-labelledby="case-study-contact-title">

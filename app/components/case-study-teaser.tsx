@@ -12,9 +12,9 @@ export function CaseStudyTeaser({ compact = false }: { compact?: boolean }) {
             ₹189.88 in message spend.<br /><em>₹4 lakh in reported gross sales.</em>
           </h2>
           <p>
-            A three-day campaign worked because two months of website, catalogue,
-            search, and Google Business Profile improvements had already made the
-            supplier easier to understand and trust.
+            A carefully selected audience made this three-day campaign relevant.
+            Two months of website, catalogue, search, and Google Business Profile
+            improvements then helped interested recipients verify the supplier.
           </p>
           <Link className="button button-dark" href="/case-studies/whatsapp-campaign-water-treatment">
             Read the case study <Icon name="arrow-up-right" />

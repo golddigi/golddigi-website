@@ -38,7 +38,7 @@ export const publicPages = {
     kind: "case-study",
     title: "WhatsApp Campaign Case Study: ₹189.88 to ₹4 Lakh Sales | Golddigi",
     name: "Water treatment WhatsApp campaign case study",
-    description: "See how two months of website, catalogue, search and Google Business Profile work supported a three-day WhatsApp campaign and ₹4 lakh in client-reported gross sales.",
+    description: "See how a selected audience and two months of website, catalogue, search and Google profile work supported a three-day WhatsApp campaign and ₹4 lakh in reported gross sales.",
   },
   "/work/shivom-designs": {
     kind: "project",
