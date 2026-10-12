@@ -7,6 +7,10 @@ const nextConfig: NextConfig = {
       has: [{ type: "host", value: "www.golddigi.com" }],
       destination: "https://golddigi.com/:path*",
       permanent: true,
+    }, {
+      source: "/case-studies/whatsapp-campaign-water-treatment",
+      destination: "/case-studies/whatsapp-campaign-result",
+      permanent: true,
     }];
   },
 };

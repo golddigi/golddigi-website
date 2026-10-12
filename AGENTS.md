@@ -10,6 +10,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 ## UI and content guidance
 
+- Use Tailwind CSS for every new page and all new design work. Do not add new CSS Modules or new page-specific rules to `app/globals.css` for these changes.
 - Preserve the warm off-white background, orange accents, serif emphasis, and dark green, blue, and terracotta service cards.
 - Use a clear agency voice with “we,” “our,” and “us.” Do not name the owner, use first-person singular language, describe the business as a team or founder-led studio, or repeatedly name Golddigi in body copy. Use concrete deliverables and customer tasks; avoid repeated generic promises. Do not invent prices, turnaround times, testimonials, performance claims, or ranking guarantees.
 - Keep service choices and contact actions easy to find. Explain what happens after an enquiry and disclose when a button opens WhatsApp or an email app; never imply a message was sent by the site.

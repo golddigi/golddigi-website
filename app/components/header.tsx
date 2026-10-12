@@ -10,6 +10,7 @@ const links = [
   { label: "Google Business Profile", href: "/google-business-profile" },
   { label: "AI automations", href: "/ai-automations" },
   { label: "Selected work", href: "/#work" },
+  { label: "About us", href: "/about" },
 ];
 
 export function Header() {
@@ -47,7 +48,7 @@ export function Header() {
             golddigi<span className="orange-text">.</span>
           </span>
         </Link>
-        <nav className="desktop-nav" aria-label="Main navigation">
+        <nav className="desktop-nav max-[1279px]:!hidden" aria-label="Main navigation">
           {links.map((link) => {
             const NavigationLink = link.href.includes("#") ? "a" : Link;
             return (
@@ -65,7 +66,7 @@ export function Header() {
           Let’s talk <Icon name="arrow-up-right" />
         </a>
         <button
-          className="menu-toggle"
+          className="menu-toggle max-[1279px]:!flex"
           type="button"
           aria-label={open ? "Close navigation" : "Open navigation"}
           aria-expanded={open}
@@ -78,7 +79,7 @@ export function Header() {
       </div>
       <nav
         id="mobile-navigation"
-        className="mobile-nav"
+        className="mobile-nav min-[1001px]:max-[1279px]:!max-h-[calc(100dvh-91px)] max-[1279px]:absolute max-[1279px]:inset-x-0 max-[1279px]:top-full max-[1279px]:border-b max-[1279px]:border-[#deded5] max-[1279px]:bg-[#f7f6f2] max-[1279px]:px-6 max-[1279px]:pb-6 max-[1279px]:[&:not([hidden])]:!flex max-[1279px]:flex-col max-[1279px]:[&>a]:flex max-[1279px]:[&>a]:min-h-11 max-[1279px]:[&>a]:items-center max-[1279px]:[&>a]:justify-between max-[1279px]:[&>a]:border-b max-[1279px]:[&>a]:border-[#deded5] max-[1279px]:[&>a]:py-4"
         aria-label="Mobile navigation"
         hidden={!open}
       >

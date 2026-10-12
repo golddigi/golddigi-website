@@ -11,6 +11,14 @@ export function StructuredData({ path }: { path: PublicPagePath }) {
     {
       "@type": "Organization", "@id": organizationId,
       name: "Golddigi", url: `${siteUrl}/`,
+      ...(page.kind === "about" ? {
+        legalName: "GOLD DIGI",
+        identifier: {
+          "@type": "PropertyValue",
+          propertyID: "Udyam registration number",
+          value: "UDYAM-RJ-02-0144798",
+        },
+      } : {}),
       location: { "@type": "Place", name: "Bhiwadi" },
       email: siteContact.email, telephone: siteContact.phone,
     },
@@ -20,12 +28,21 @@ export function StructuredData({ path }: { path: PublicPagePath }) {
       publisher: { "@id": organizationId },
     },
     {
-      "@type": "WebPage", "@id": `${url}#webpage`,
+      "@type": page.kind === "about" ? "AboutPage" : "WebPage", "@id": `${url}#webpage`,
       url, name: page.title, description: page.description,
       isPartOf: { "@id": websiteId }, inLanguage: "en",
       ...(isService ? { mainEntity: { "@id": `${url}#service` } } : {}),
+      ...(page.kind === "about" ? { about: { "@id": organizationId }, mentions: { "@id": `${url}#developer` } } : {}),
     },
   ];
+
+  if (page.kind === "about") {
+    graph.push({
+      "@type": "Person", "@id": `${url}#developer`,
+      name: "Apurv Sharma", jobTitle: "Developer",
+      worksFor: { "@id": organizationId },
+    });
+  }
 
   if (isService) {
     graph.push({

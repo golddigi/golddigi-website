@@ -91,11 +91,11 @@ export default function Home() {
               <span className="status-dot" /> DIGITAL SERVICES. BUILT AROUND YOUR BUSINESS.
             </p>
             <h1 id="hero-title">
-              Get found.
+              Websites.
               <br />
-              Get <em>chosen.</em>
+              Google <em>Business Profile.</em>
               <br />
-              Work smarter<span className="orange-text">.</span>
+              AI automations<span className="orange-text">.</span>
             </h1>
             <p className="hero-description">
               Custom websites, Google Business Profile optimization, and AI
@@ -129,9 +129,9 @@ export default function Home() {
                 <span className="section-marker" /> WHAT WE DO
               </p>
               <h2 id="services-title">
-                Find the right
+                Digital services.
                 <br />
-                <em>starting point.</em>
+                <em>Choose your starting point.</em>
               </h2>
             </div>
             <p className="section-description">
@@ -180,7 +180,7 @@ export default function Home() {
           <div className="section-heading">
             <div>
               <p className="eyebrow"><span className="section-marker" /> SELECTED WEBSITE PROJECTS</p>
-              <h2 id="work-title">Different businesses.<br /><em>Distinctly their own.</em></h2>
+              <h2 id="work-title">Website projects.<br /><em>Built around each business.</em></h2>
             </div>
             <p className="section-description">A closer look at websites we’ve worked on, from interior design to water treatment and industrial supply. Explore the actual sites below.</p>
           </div>
@@ -248,9 +248,9 @@ export default function Home() {
               <span className="section-marker" /> A FEW MORE THINGS
             </p>
             <h2 id="faq-title">
-              Good <em>questions.</em>
+              Digital service <em>FAQs.</em>
               <br />
-              Straight answers.
+              Before we start.
             </h2>
             <p className="section-description">
               Wondering where to start?

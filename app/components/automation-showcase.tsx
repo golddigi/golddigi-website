@@ -14,7 +14,7 @@ const workflows = {
     shortName: "WhatsApp",
     summary: "Start a conversation. Keep it moving.",
     title: "Keep the conversation going.",
-    outcome: "Reach opted-in customers with template messages, then let an AI agent respond when they reply.",
+    outcome: "Reach opted-in customers with template messages, then let an AI agent answer product and specification questions using the information supplied for your setup.",
     steps: [
       { title: "Send a template message", detail: "Reach opted-in customers through the official WhatsApp API.", icon: "whatsapp" },
       { title: "Receive a customer reply", detail: "The conversation becomes the trigger for the next step.", icon: "flow" },
@@ -108,7 +108,7 @@ function EmailPreview() {
       <div className={styles.emailHeader}><span className={styles.emailAppIcon}><WorkflowIcon name="email" /></span><span>Business inbox</span><span className={styles.headerDecoration} aria-hidden="true">•••</span></div>
       <div className={styles.emailThread}>
         <span className={styles.mailFolder}>INCOMING ENQUIRY</span>
-        <h4>A question about your services</h4>
+        <p className="!mt-[9px] !mb-[21px] !text-[17px] font-medium !leading-[1.4] tracking-tight !text-[var(--foreground)]">A question about your services</p>
         <div className={styles.emailSender}><span className={styles.senderAvatar}>A</span><div><strong>Asha</strong><span>To: your business</span></div></div>
         <p>Hello, we’re interested in your services. What information do you need to get started?</p>
         <span className={styles.emailDivider}><WorkflowIcon name="spark" /><span>AI prepares a relevant answer</span></span>

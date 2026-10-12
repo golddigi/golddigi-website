@@ -20,7 +20,7 @@ const steps = [
 ];
 
 const faqs = [
-  { question: "Are these systems you have actually built?", answer: "Yes. We’ve built WhatsApp outreach and reply agents, an agent that replies to emails, and a workflow that saves new IndiaMART leads to a database. The visuals on this page use sample conversations and lead details to explain how those systems work." },
+  { question: "Are these systems you have actually built?", answer: "Yes. We’ve built WhatsApp product assistants, email reply agents, daily Gmail-to-Google-Sheets enquiry collection, personalized marketing emails, and a workflow that saves new IndiaMART leads to a database. The visuals on this page use sample conversations and lead details to explain how those systems work." },
   { question: "Do the WhatsApp and email agents send replies automatically?", answer: "Yes, the reply agents can generate and send responses. For your project, we’ll agree on the information the agent can use, the situations it should handle, and which conversations need your attention before enabling automatic replies." },
   { question: "Does the IndiaMART workflow also contact the leads?", answer: "The workflow shown here captures new IndiaMART leads and stores them in a database. Follow-up messages, reminders, or other actions can be discussed as a separate extension." },
   { question: "Can you use existing accounts?", answer: "We start with the tools and accounts you already use. We’ll check the available access and integrations before agreeing on the setup. You don’t need every tool shown on this website." },
@@ -37,7 +37,7 @@ export default function AutomationsPage() {
         <section className={`section-wrap ${styles.hero}`} aria-labelledby="automation-title">
           <div>
             <p className="eyebrow"><span className="section-marker" /> AI AUTOMATIONS</p>
-            <h1 id="automation-title">AI automations.<br />WhatsApp, email.<br /><em>IndiaMART leads.</em></h1>
+            <h1 id="automation-title">AI automation<br />&amp; workflows.<br /><em>Less manual work.</em></h1>
           </div>
           <div className={styles.heroAside}>
             <BrandMark />
@@ -49,10 +49,38 @@ export default function AutomationsPage() {
 
         <section className={`section-wrap ${styles.showcaseSection}`} id="automation-showcase" aria-labelledby="showcase-title">
           <div className={styles.showcaseHeading}>
-            <div><p className="eyebrow">AUTOMATIONS WE’VE BUILT</p><h2 id="showcase-title">Pick a task.<br /><em>Follow the flow.</em></h2></div>
-            <p>Explore what happens from the first message to the next step. Each setup is adapted to the business using it.</p>
+            <div><p className="eyebrow">AUTOMATIONS WE’VE BUILT</p><h2 id="showcase-title">Explore our AI<br /><em>automation workflows.</em></h2></div>
+            <p>We adapt each workflow to your business, connected accounts, and the tasks you want to automate.</p>
+          </div>
+          <div className="mb-9 grid grid-cols-1 gap-7 lg:grid-cols-3 lg:gap-9">
+            <article>
+              <h3 className="mb-3 text-2xl font-medium tracking-tight">WhatsApp outreach &amp; replies</h3>
+              <p className="text-[15px] leading-relaxed text-[var(--muted)]">We connect template messages for opted-in customers with an AI agent that answers questions about your products, specifications and other supplied details. We agree on its information and reply rules before enabling automatic responses.</p>
+            </article>
+            <article>
+              <h3 className="mb-3 text-2xl font-medium tracking-tight">Email reply automation</h3>
+              <p className="text-[15px] leading-relaxed text-[var(--muted)]">We build an AI agent that reads incoming Gmail messages and sends relevant responses, with agreed context and rules for conversations that need your attention.</p>
+            </article>
+            <article>
+              <h3 className="mb-3 text-2xl font-medium tracking-tight">IndiaMART lead capture</h3>
+              <p className="text-[15px] leading-relaxed text-[var(--muted)]">We capture new IndiaMART enquiries and save the lead details to a database, giving you an organized place to review enquiries without copying each record by hand.</p>
+            </article>
           </div>
           <AutomationShowcase />
+        </section>
+
+        <section className="section-wrap section-space" aria-labelledby="email-workflows-title">
+          <h2 id="email-workflows-title" className="mb-8 text-3xl font-medium tracking-tight sm:text-4xl">Enquiry collection &amp; personalized email.</h2>
+          <div className="grid gap-8 md:grid-cols-2">
+            <article>
+              <h3 className="mb-3 text-2xl font-medium">Gmail enquiries to Google Sheets</h3>
+              <p className="text-[15px] leading-relaxed text-[var(--muted)]">We built a daily workflow that adds incoming Gmail enquiries to a Google Sheets database at 8 am. It brings enquiry details into one place for review and follow-up. For your setup, we agree on the fields, schedule and time zone.</p>
+            </article>
+            <article>
+              <h3 className="mb-3 text-2xl font-medium">Personalized marketing emails</h3>
+              <p className="text-[15px] leading-relaxed text-[var(--muted)]">We built an email workflow that personalizes each marketing message before sending it. For your project, we agree on the recipient information, message content and sending rules.</p>
+            </article>
+          </div>
         </section>
 
         <CaseStudyTeaser />
@@ -74,7 +102,7 @@ export default function AutomationsPage() {
         </section>
 
         <section className={`section-wrap ${styles.faq}`} aria-labelledby="automation-faq-title">
-          <div><p className="eyebrow"><span className="section-marker" /> GOOD TO KNOW</p><h2 id="automation-faq-title">A little more<br /><em>clarity.</em></h2></div>
+          <div><p className="eyebrow"><span className="section-marker" /> GOOD TO KNOW</p><h2 id="automation-faq-title">AI automation<br /><em>FAQs.</em></h2></div>
           <div className="faq-list">{faqs.map((faq) => <details className="faq-item" name="automation-faq" key={faq.question}><summary><span>{faq.question}</span><Icon name="plus" /></summary><p>{faq.answer}</p></details>)}</div>
         </section>
 

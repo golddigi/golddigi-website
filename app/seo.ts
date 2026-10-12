@@ -4,6 +4,12 @@ import { siteUrl } from "./site-config";
 // Register only complete, public pages here. Metadata and crawl discovery share
 // this list so unpublished city pages cannot accidentally enter the sitemap.
 export const publicPages = {
+  "/about": {
+    kind: "about",
+    title: "About Us | Apurv Sharma, Developer | Golddigi",
+    name: "About Golddigi",
+    description: "Learn about our Bhiwadi-based website, Google Business Profile and automation services. Meet Apurv Sharma, our developer, and see how we work with you.",
+  },
   "/websites/bhiwadi": {
     kind: "service",
     title: "Website Design in Bhiwadi | Business Websites | Golddigi",
@@ -34,7 +40,7 @@ export const publicPages = {
     name: "AI automation services",
     description: "Explore AI agents for WhatsApp conversations and email replies, plus automated IndiaMART lead capture. Practical n8n workflows built around your business.",
   },
-  "/case-studies/whatsapp-campaign-water-treatment": {
+  "/case-studies/whatsapp-campaign-result": {
     kind: "case-study",
     title: "WhatsApp Campaign Case Study: ₹189.88 to ₹4 Lakh Sales | Golddigi",
     name: "Water treatment WhatsApp campaign case study",

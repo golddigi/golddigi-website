@@ -8,7 +8,7 @@ import { pageMetadata } from "../../seo";
 import { whatsappLink } from "../../site-config";
 import styles from "./case-study.module.css";
 
-const path = "/case-studies/whatsapp-campaign-water-treatment" as const;
+const path = "/case-studies/whatsapp-campaign-result" as const;
 export const metadata: Metadata = pageMetadata(path);
 
 const platformResults = [

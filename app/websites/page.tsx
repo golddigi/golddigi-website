@@ -72,7 +72,7 @@ export default function WebsitesPage() {
 
         <section className="section-wrap section-space" id="website-projects">
           <div className={styles.sectionHeading}>
-            <div><p className="eyebrow">01 / SELECTED WORK</p><h2>Different businesses.<br /><em>Their own presence.</em></h2></div>
+            <div><p className="eyebrow">01 / SELECTED WORK</p><h2>Selected website projects.<br /><em>Explore our work.</em></h2></div>
             <p>Architecture, healthcare, water treatment and consultancy. Explore websites we’ve worked on for real businesses.</p>
           </div>
           <ProjectGallery />
@@ -81,7 +81,7 @@ export default function WebsitesPage() {
         <section className={styles.deliverables}>
           <div className="section-wrap section-space">
             <div className={styles.sectionHeading}>
-              <div><p className="eyebrow">02 / YOUR WEBSITE</p><h2>Every part has<br /><em>a job to do.</em></h2></div>
+              <div><p className="eyebrow">02 / YOUR WEBSITE</p><h2>What your<br /><em>website includes.</em></h2></div>
               <p>We agree on the right pages, features and content tools for your business. Here’s what we can build into the plan.</p>
             </div>
             <div className={styles.deliverableGrid}>
@@ -125,7 +125,7 @@ export default function WebsitesPage() {
         </section>
 
         <section className={`section-wrap ${styles.faqSection}`}>
-          <div><p className="eyebrow">04 / GOOD TO KNOW</p><h2>Before<br /><em>we build.</em></h2></div>
+          <div><p className="eyebrow">04 / GOOD TO KNOW</p><h2>Website project<br /><em>FAQs.</em></h2></div>
           <div className={styles.faqList}>
             {faqs.map((faq) => (
               <details key={faq.question} className={styles.faq}>

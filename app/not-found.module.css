@@ -1,0 +1,107 @@
+.main {
+  display: grid;
+  grid-template-columns: minmax(180px, .55fr) minmax(0, 1fr);
+  align-items: center;
+  gap: clamp(48px, 9vw, 140px);
+  min-height: calc(100svh - 91px);
+  padding-block: clamp(72px, 11vw, 150px);
+}
+
+.code {
+  margin: 0;
+  color: var(--orange);
+  font: 400 clamp(92px, 17vw, 220px)/.8 Georgia, "Times New Roman", serif;
+  letter-spacing: -.04em;
+}
+
+.copy {
+  max-width: 650px;
+  padding-block: 30px;
+  border-block: 1px solid var(--line);
+}
+
+.copy h1 {
+  margin: 0;
+  font-size: clamp(43px, 5.5vw, 72px);
+  font-weight: 500;
+  line-height: 1.03;
+  letter-spacing: -.04em;
+  text-wrap: balance;
+}
+
+.copy > p {
+  max-width: 56ch;
+  margin: 28px 0 0;
+  color: var(--muted);
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 30px;
+  margin-top: 38px;
+}
+
+.contactLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  min-height: 54px;
+  padding: 13px 4px;
+  color: #3f5548;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #aeb7ac;
+  text-underline-offset: 6px;
+}
+
+.contactLink:hover {
+  color: #b6371b;
+  text-decoration-color: currentColor;
+}
+
+.contactLink svg {
+  width: 17px;
+  height: 17px;
+}
+
+@media (max-width: 700px) {
+  .main {
+    grid-template-columns: 1fr;
+    align-content: center;
+    gap: 50px;
+    min-height: calc(100svh - 78px);
+    padding-block: 66px 82px;
+  }
+
+  .code {
+    font-size: clamp(86px, 31vw, 130px);
+  }
+
+  .copy {
+    padding-block: 27px;
+  }
+
+  .copy h1 {
+    font-size: clamp(40px, 12vw, 54px);
+  }
+
+  .copy > p {
+    font-size: 16px;
+  }
+
+  .actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .actions :global(.button),
+  .contactLink {
+    width: 100%;
+  }
+}

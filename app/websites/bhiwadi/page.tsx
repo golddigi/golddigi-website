@@ -65,7 +65,7 @@ export default function BhiwadiWebsitesPage() {
       </section>
 
       <section className={`section-wrap ${styles.faqSection}`} aria-labelledby="faq-title">
-        <h2 id="faq-title">Before your<br /><em>website project.</em></h2>
+        <h2 id="faq-title">Website design in Bhiwadi.<br /><em>Your questions answered.</em></h2>
         <div className={styles.faqList}>{questions.map(({ question, answer }) => <details className={styles.faq} key={question}><summary>{question}<Icon name="plus" /></summary><p>{answer}</p></details>)}</div>
       </section>
       <section className={`section-wrap ${styles.finalCta}`} aria-labelledby="contact-title">

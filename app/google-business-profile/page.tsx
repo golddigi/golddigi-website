@@ -98,14 +98,15 @@ export default function GoogleBusinessProfilePage() {
           <ProfileIllustration />
         </section>
 
-        <section className={styles.customerJourney} aria-label="Help local customers choose their next step">
+        <section className={styles.customerJourney} aria-labelledby="customer-journey-title">
+          <div className="section-wrap pt-8"><h2 id="customer-journey-title" className="text-2xl font-medium tracking-tight sm:text-3xl">How customers use your profile.</h2></div>
           <div className={`section-wrap ${styles.journeyGrid}`}>
-            {customerSteps.map((step) => <article key={step.title}><Icon name={step.icon} /><div><h2>{step.title}</h2><p>{step.text}</p></div></article>)}
+            {customerSteps.map((step) => <article key={step.title}><Icon name={step.icon} /><div><h3 className="mb-2 text-base font-medium">{step.title}</h3><p className="!text-[15px]">{step.text}</p></div></article>)}
           </div>
         </section>
 
         <section className="section-wrap section-space" id="profile-services" aria-labelledby="services-title">
-          <div className={styles.sectionHeading}><div><p className="eyebrow">01 / HOW WE CAN HELP</p><h2 id="services-title">Get the details right.<br /><em>Then keep them right.</em></h2></div><p>Start with a focused improvement to your existing profile, or arrange ongoing help. We agree on the work and frequency before we begin.</p></div>
+          <div className={styles.sectionHeading}><div><p className="eyebrow">01 / HOW WE CAN HELP</p><h2 id="services-title">Profile optimization<br /><em>&amp; ongoing management.</em></h2></div><p>Start with a focused improvement to your existing profile, or arrange ongoing help. We agree on the work and frequency before we begin.</p></div>
           <div className={styles.packages}>
             <article className={styles.package}>
               <div className={styles.packageTop}><span>THE STARTING POINT</span><span>01</span></div>
@@ -127,19 +128,19 @@ export default function GoogleBusinessProfilePage() {
 
         <section className={styles.focusSection} aria-labelledby="focus-title">
           <div className="section-wrap section-space">
-            <div className={styles.sectionHeading}><div><p className="eyebrow">02 / WHAT GETS ATTENTION</p><h2 id="focus-title">The small details<br /><em>behind a good impression.</em></h2></div><p>Your profile should answer the questions people ask before they contact you: what you do, where you work and how to reach you.</p></div>
+            <div className={styles.sectionHeading}><div><p className="eyebrow">02 / WHAT GETS ATTENTION</p><h2 id="focus-title">What we review<br /><em>on your profile.</em></h2></div><p>Your profile should answer the questions people ask before they contact you: what you do, where you work and how to reach you.</p></div>
             <div className={styles.focusGrid}>{focusAreas.map((area, index) => <article key={area.title}><span>0{index + 1}</span><h3>{area.title}</h3><p>{area.text}</p></article>)}</div>
             <p className={styles.reportingNote}>Performance reporting depends on the data available for your verified profile. Call-button clicks show intent to call, not completed calls. <a href="https://support.google.com/business/answer/9918094?hl=en" target="_blank" rel="noopener noreferrer">About Google’s profile metrics <Icon name="arrow-up-right" /></a></p>
           </div>
         </section>
 
         <section className={`section-wrap section-space ${styles.fitSection}`} aria-labelledby="fit-title">
-          <div><p className="eyebrow">03 / BUILT FOR LOCAL BUSINESS</p><h2 id="fit-title">Your customers<br /><em>are closer than you think.</em></h2><p>This service is for eligible businesses with a place customers can visit, or a team that visits or delivers to customers in person.</p><div className={styles.fitTags}><span>Shops & showrooms</span><span>Clinics & practices</span><span>Local service businesses</span></div></div>
+          <div><p className="eyebrow">03 / BUILT FOR LOCAL BUSINESS</p><h2 id="fit-title">Who our profile<br /><em>service is for.</em></h2><p>This service is for eligible businesses with a place customers can visit, or a team that visits or delivers to customers in person.</p><div className={styles.fitTags}><span>Shops & showrooms</span><span>Clinics & practices</span><span>Local service businesses</span></div></div>
           <div className={styles.websiteConnection}><Icon name="browser" /><h3>Your profile and website<br />work together.</h3><p>The profile helps people find the essentials on Search and Maps. Your website gives them room to explore your services, see your work and send a detailed enquiry.</p><Link className="text-link" href="/websites">Explore custom websites <Icon name="arrow-up-right" /></Link></div>
         </section>
 
         <section className={`section-wrap ${styles.faqSection}`} aria-labelledby="faq-title">
-          <div><p className="eyebrow">04 / GOOD TO KNOW</p><h2 id="faq-title">A clear picture.<br /><em>Before we start.</em></h2></div>
+          <div><p className="eyebrow">04 / GOOD TO KNOW</p><h2 id="faq-title">Google Business Profile<br /><em>FAQs.</em></h2></div>
           <div className={styles.faqList}>
             <details className={styles.faq}><summary>Can you guarantee a top position on Google?<Icon name="plus" /></summary><p>No. Local results depend on relevance, distance and how well-known a business is. We focus on accurate information and useful profile management, with progress reviewed using available data. <a href="https://support.google.com/business/answer/7091?hl=en" target="_blank" rel="noopener noreferrer">See Google’s explanation of local ranking.</a></p></details>
             <details className={styles.faq}><summary>Isn’t Google Business Profile free?<Icon name="plus" /></summary><p>Yes. Google lets you create and manage an eligible Business Profile for free. The fee covers the agreed optimization or management work and ongoing support. This is an independent service and is not affiliated with Google. <a href="https://business.google.com/us/support/" target="_blank" rel="noopener noreferrer">Read Google’s Business Profile FAQs.</a></p></details>

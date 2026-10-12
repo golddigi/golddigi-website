@@ -14,6 +14,7 @@ export function Footer() {
           <p className={styles.description}>Based in Bhiwadi.<br />Websites, local presence and automations, delivered remotely too.</p>
         </div>
         <nav className={styles.links} aria-label="Footer navigation">
+          <Link href="/about">About us</Link>
           <Link href="/websites">Custom websites</Link>
           <Link href="/websites/bhiwadi">Website design in Bhiwadi</Link>
           <Link href="/google-business-profile">Google Business Profile</Link>
