@@ -6,9 +6,9 @@ import { siteUrl } from "./site-config";
 export const publicPages = {
   "/about": {
     kind: "about",
-    title: "About Us | Apurv Sharma, Developer | Golddigi",
+    title: "About Our Digital Services | Golddigi",
     name: "About Golddigi",
-    description: "Learn about our Bhiwadi-based website, Google Business Profile and automation services. Meet Apurv Sharma, our developer, and see how we work with you.",
+    description: "Explore our Bhiwadi-based website, Google Business Profile and automation services, business registration, project examples and working process.",
   },
   "/websites/bhiwadi": {
     kind: "service",
@@ -42,7 +42,7 @@ export const publicPages = {
   },
   "/case-studies/whatsapp-campaign-result": {
     kind: "case-study",
-    title: "WhatsApp Campaign Case Study: ₹189.88 to ₹4 Lakh Sales | Golddigi",
+    title: "WhatsApp Campaign: Client-Reported Sales & Context | Golddigi",
     name: "Water treatment WhatsApp campaign case study",
     description: "See how a selected audience and two months of website, catalogue, search and Google profile work supported a three-day WhatsApp campaign and ₹4 lakh in reported gross sales.",
   },
@@ -72,7 +72,7 @@ export function pageMetadata(path: PublicPagePath): Metadata {
       title, description, url: path,
       type: "website", locale: "en_IN", siteName: "Golddigi",
     },
-    twitter: { card: "summary", title, description },
+    twitter: { card: "summary_large_image", title, description },
   };
 }
 

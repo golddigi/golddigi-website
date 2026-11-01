@@ -1,5 +1,7 @@
 # Golddigi SEO handoff
 
+Latest implementation: see `SEO-IMPLEMENTATION.md` for the 1 November 2026 content changes, Ubersuggest keyword map, verification results and outstanding access dependencies. The older notes below are historical; owner naming was removed to follow the current AGENTS.md guidance.
+
 Updated: 2026-09-19
 
 This file records the SEO review and implementation completed in the current session. A fresh model should read this before changing the SEO work.

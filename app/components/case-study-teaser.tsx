@@ -22,13 +22,10 @@ export function CaseStudyTeaser({ compact = false }: { compact?: boolean }) {
           >
             ₹189.88 in message spend.
             <br />
-            <em>₹4 lakh in reported gross sales.</em>
+            <em>₹4 lakh in client-reported gross sales.</em>
           </h2>
           <p>
-            A carefully selected audience made this three-day campaign relevant.
-            Two months of website, catalogue, search, and Google Business
-            Profile improvements then helped interested recipients verify the
-            supplier.
+            The spend covers messaging only, not the full project. The campaign followed two months of website, catalogue, search and Google Business Profile work. Sales were reported by the client for the campaign period; message spend alone does not establish the return on that work.
           </p>
           <Link
             className="button button-dark"

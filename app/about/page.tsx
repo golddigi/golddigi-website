@@ -41,14 +41,11 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="bg-[#e7e9e0] py-16 md:py-24" aria-labelledby="developer-title">
+        <section className="bg-[#e7e9e0] py-16 md:py-24" aria-labelledby="work-title">
           <div className="section-wrap grid gap-8 md:grid-cols-[1fr_1.4fr] md:gap-16">
-            <h2 id="developer-title" className="text-3xl font-semibold tracking-[-0.02em] sm:text-4xl">Meet our developer</h2>
+            <h2 id="work-title" className="text-3xl font-semibold tracking-[-0.02em] sm:text-4xl">Explore our published work</h2>
             <div className="max-w-2xl">
-              <h3 className="text-3xl font-semibold sm:text-4xl">Apurv Sharma</h3>
-              <p className="mt-2 font-medium text-[#8b321d]">Developer at Golddigi</p>
-              <p className="mt-6">Apurv Sharma is our developer. Website development is part of our work, from structuring service information to connecting the ways customers get in touch.</p>
-              <p className="mt-4">You can explore our published website projects to see the kinds of pages and customer journeys we build.</p>
+              <p>Our website projects show two different customer tasks: exploring interior design work and finding water treatment products. Each project page explains the information and enquiry routes on the site.</p>
               <div className="mt-6 flex flex-wrap gap-x-8 gap-y-2">
                 <Link href="/work/shivom-designs" className="inline-flex min-h-11 items-center underline underline-offset-4">Shivom Designs website</Link>
                 <Link href="/work/daksha-enterprises" className="inline-flex min-h-11 items-center underline underline-offset-4">Daksha Enterprises website</Link>

@@ -93,7 +93,7 @@ export default function GoogleBusinessProfilePage() {
             <h1 id="profile-title">Google Business Profile <em>optimization &amp; management.</em></h1>
             <p className={styles.intro}>Google Business Profile optimization and ongoing management for local businesses. We help you present the right information, keep it current and make it easier for people to get in touch.</p>
             <div className={styles.heroActions}><a className="button button-orange" href={enquiryUrl} target="_blank" rel="noopener noreferrer">Discuss your Business Profile <Icon name="arrow-up-right" /></a><a className="text-link" href="#profile-services">See how we can help <Icon name="arrow-down" /></a></div>
-            <p className={styles.heroNote}>For businesses that welcome customers or serve them in person.</p>
+            <p className={styles.heroNote}>For eligible businesses that serve customers in person. The discussion button opens WhatsApp with a draft you review and send.</p>
           </div>
           <ProfileIllustration />
         </section>
@@ -123,7 +123,7 @@ export default function GoogleBusinessProfilePage() {
               <a className="text-link" href={whatsappLink("Hello, we’d like to discuss ongoing Google Business Profile management.\n\nBusiness name: \nCity / area: \nProfile link (optional): ")} target="_blank" rel="noopener noreferrer">Discuss ongoing management <Icon name="arrow-up-right" /></a>
             </article>
           </div>
-          <p className={styles.scopeNote}>Google Business Profile itself is free. Our fee covers the agreed optimization or management work. You can choose this service on its own.</p>
+          <p className={styles.scopeNote}>Google Business Profile itself is free. Our fee covers the agreed optimization or management work. These discussion links open WhatsApp; you review and send the draft there.</p>
         </section>
 
         <section className={styles.focusSection} aria-labelledby="focus-title">
@@ -146,7 +146,7 @@ export default function GoogleBusinessProfilePage() {
             <details className={styles.faq}><summary>Isn’t Google Business Profile free?<Icon name="plus" /></summary><p>Yes. Google lets you create and manage an eligible Business Profile for free. The fee covers the agreed optimization or management work and ongoing support. This is an independent service and is not affiliated with Google. <a href="https://business.google.com/us/support/" target="_blank" rel="noopener noreferrer">Read Google’s Business Profile FAQs.</a></p></details>
             <details className={styles.faq}><summary>Is this service available without a website project?<Icon name="plus" /></summary><p>Yes. Profile optimization and management are available as standalone services. If you already have a website, we can work with that and check that the business information lines up.</p></details>
             <details className={styles.faq}><summary>What if the business doesn’t have a storefront?<Icon name="plus" /></summary><p>A service-area business can be eligible if it visits or delivers to customers in person. We’ll check how you operate and whether a Business Profile is appropriate before agreeing on the work.</p></details>
-            <details className={styles.faq}><summary>What information is needed to begin?<Icon name="plus" /></summary><p>Your business name, area and existing profile link are enough for an initial conversation. For the work itself, we’ll agree on the access needed, confirm your business details and collect any photos or updates you want to share.</p></details>
+            <details className={styles.faq}><summary>What information is needed to begin?<Icon name="plus" /></summary><p>Share your business name, area and existing profile link. Before work starts, we agree on the account access, business details and supplied photos needed, plus who approves changes and review replies. If verification or a suspension is involved, flag it in your enquiry so we can confirm whether it falls within the proposed work.</p></details>
             <details className={styles.faq}><summary>How often can the profile be updated?<Icon name="plus" /></summary><p>The management plan sets out the schedule, tasks and review process. We’ll match it to how often your business has relevant changes, new photos or customer feedback to respond to.</p></details>
           </div>
         </section>

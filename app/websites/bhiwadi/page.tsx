@@ -51,15 +51,20 @@ export default function BhiwadiWebsitesPage() {
       </section>
 
       <section className="section-wrap section-space" id="projects" aria-labelledby="projects-title">
-        <div className={styles.sectionHeading}><h2 id="projects-title">See the work.<br /><em>Explore the websites.</em></h2><p>Examples from our website portfolio: architecture and interiors, and water treatment and industrial supply.</p></div>
+        <div className={styles.sectionHeading}><h2 id="projects-title">See the work.<br /><em>Explore the websites.</em></h2><p>Daksha Enterprises is a Bhiwadi water treatment supplier in our portfolio. Its website groups products by category and application and connects product information to enquiry routes. Shivom Designs shows a different approach for visual service work.</p></div>
         <ProjectGallery limit={2} />
+        <div className="mt-8 max-w-3xl text-[15px] leading-relaxed">
+          <h3 className="mb-3 text-2xl font-medium">A product catalogue for quotation enquiries</h3>
+          <p>A buyer checking a water treatment product may need its application, specification and pack size before requesting a quote. We plan catalogue pages around the information you can supply and the details your business needs back from the buyer. Online checkout is a separate requirement.</p>
+          <Link href="/work/daksha-enterprises" className="mt-4 inline-flex min-h-11 items-center underline underline-offset-4">Explore the Bhiwadi supplier website project</Link>
+        </div>
       </section>
 
       <section className="section-wrap section-space" aria-labelledby="delivery-title">
         <div className={styles.sectionHeading}><h2 id="delivery-title">A local base.<br /><em>A remote working process.</em></h2><p>We agree on the scope before building. Share your existing website, content and priorities; we plan the pages, review the work together and prepare for launch.</p></div>
         <div className={styles.deliverableGrid}>
           <article className={styles.deliverable}><h3>Content and reviews</h3><p>We agree on who supplies copy, images and product details, and how feedback is collected. If you need to update content yourself, we can include an editable CMS in the scope.</p></article>
-          <article className={styles.deliverable}><h3>Launch and ownership</h3><p>Domain and hosting setup, access handover and ongoing support are discussed before work begins. Renewals and third-party subscriptions are identified separately in your proposal.</p><Link className="text-link" href="/websites">Website deliverables <Icon name="arrow-right" /></Link></article>
+          <article className={styles.deliverable}><h3>Launch and ownership</h3><p>We agree on domain and hosting responsibilities, account access and the content you can edit. The handover covers the parts you will manage; ongoing updates, renewals and third-party subscriptions are identified separately in your proposal.</p><Link className="text-link" href="/websites">Website deliverables <Icon name="arrow-right" /></Link></article>
           <article className={styles.deliverable}><h3>Discovery and follow-up</h3><p>Connect your website with your local presence or a lead workflow where it helps your business.</p><Link className="text-link" href="/google-business-profile">Google Business Profile services <Icon name="arrow-right" /></Link><Link className="text-link" href="/ai-automations">Enquiry automations <Icon name="arrow-right" /></Link></article>
         </div>
       </section>

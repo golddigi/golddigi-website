@@ -32,17 +32,9 @@ export function StructuredData({ path }: { path: PublicPagePath }) {
       url, name: page.title, description: page.description,
       isPartOf: { "@id": websiteId }, inLanguage: "en",
       ...(isService ? { mainEntity: { "@id": `${url}#service` } } : {}),
-      ...(page.kind === "about" ? { about: { "@id": organizationId }, mentions: { "@id": `${url}#developer` } } : {}),
+      ...(page.kind === "about" ? { about: { "@id": organizationId } } : {}),
     },
   ];
-
-  if (page.kind === "about") {
-    graph.push({
-      "@type": "Person", "@id": `${url}#developer`,
-      name: "Apurv Sharma", jobTitle: "Developer",
-      worksFor: { "@id": organizationId },
-    });
-  }
 
   if (isService) {
     graph.push({
@@ -57,6 +49,6 @@ export function StructuredData({ path }: { path: PublicPagePath }) {
 
   // Do not add offices, ratings, prices or service areas without real evidence.
   return <script type="application/ld+json" dangerouslySetInnerHTML={{
-    __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\\u003c"),
+    __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\u003c"),
   }} />;
 }

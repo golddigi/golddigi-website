@@ -24,6 +24,8 @@ const faqs = [
   { question: "Do the WhatsApp and email agents send replies automatically?", answer: "Yes, the reply agents can generate and send responses. For your project, we’ll agree on the information the agent can use, the situations it should handle, and which conversations need your attention before enabling automatic replies." },
   { question: "Does the IndiaMART workflow also contact the leads?", answer: "The workflow shown here captures new IndiaMART leads and stores them in a database. Follow-up messages, reminders, or other actions can be discussed as a separate extension." },
   { question: "Can you use existing accounts?", answer: "We start with the tools and accounts you already use. We’ll check the available access and integrations before agreeing on the setup. You don’t need every tool shown on this website." },
+  { question: "What happens when a reply or connection needs attention?", answer: "Before launch, we agree on which questions can be answered automatically, what information the agent may use and when a conversation should come to you. We also scope what happens if a connection fails or a lead already exists. Alerts, retries, duplicate checks and ongoing monitoring depend on the agreed workflow; they are not included by default." },
+  { question: "Who manages the connected accounts and enquiry data?", answer: "We agree on the accounts, access permissions, destination for enquiry records and who will maintain the setup. Before connecting customer information, we identify the services involved and agree on the data and access needed for the task." },
   { question: "What is included in the cost?", answer: "The project quote sets out the workflow, integrations, testing, and handover. Hosting, messaging, AI usage, and other third-party subscriptions are discussed separately, along with any ongoing support." },
 ];
 
@@ -108,7 +110,7 @@ export default function AutomationsPage() {
 
         <section className={`section-wrap ${styles.cta}`} aria-labelledby="automation-contact-title">
           <div><p className="eyebrow">LET’S FIND YOUR STARTING POINT</p><h2 id="automation-contact-title">What would you love<br />to do <em>less of?</em></h2><p>Tell us about the conversations, enquiries, or repetitive work taking up your day.</p></div>
-          <div className={styles.ctaActions}><a className="button button-dark" href={whatsappLink("Hello, we’d like to discuss an automation for our business.")} target="_blank" rel="noopener noreferrer">Discuss an automation <Icon name="arrow-up-right" /></a><Link className="text-link" href="/#contact">Share a few details first <Icon name="arrow-right" /></Link><span>Opens a conversation on WhatsApp.</span></div>
+          <div className={styles.ctaActions}><a className="button button-dark" href={whatsappLink("Hello, we’d like to discuss an automation for our business.")} target="_blank" rel="noopener noreferrer">Discuss an automation <Icon name="arrow-up-right" /></a><Link className="text-link" href="/#contact">Share a few details first <Icon name="arrow-right" /></Link><span>Opens WhatsApp with a draft. Review it and tap Send.</span></div>
         </section>
       </main>
       <Footer />

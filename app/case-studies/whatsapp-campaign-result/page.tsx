@@ -12,7 +12,7 @@ const path = "/case-studies/whatsapp-campaign-result" as const;
 export const metadata: Metadata = pageMetadata(path);
 
 const platformResults = [
-  ["Campaign spend", "₹189.88"],
+  ["Messaging spend only", "₹189.88"],
   ["Messages sent", "223"],
   ["Messages delivered", "220"],
   ["Messages read", "154 (70%)"],
@@ -38,7 +38,7 @@ export default function WhatsAppCampaignCaseStudy() {
           <header className={`section-wrap ${styles.hero}`}>
             <div className={styles.heroCopy}>
               <Link className="text-link" href="/ai-automations">AI automations <Icon name="arrow-right" /></Link>
-              <h1>₹189.88 in message spend.<br /><em>₹4 lakh in reported gross sales.</em></h1>
+              <h1>₹189.88 in message spend.<br /><em>₹4 lakh in client-reported gross sales.</em></h1>
               <p className={styles.intro}>A targeted three-day WhatsApp campaign sent to selected recipients for a water-treatment chemicals and industrial RO supplier, supported by two months of work across its website, catalogue, search presence, and Google Business Profile.</p>
             </div>
             <dl className={styles.heroFacts}>
@@ -53,7 +53,7 @@ export default function WhatsAppCampaignCaseStudy() {
             <div className="section-wrap">
               <div className={styles.resultHeading}>
                 <h2 id="results-title">What the campaign recorded.</h2>
-                <p>Platform figures come from the supplied campaign report. Sales and customer outcomes were reported by the client.</p>
+                <p>Platform figures come from the supplied campaign report. Sales and customer outcomes were reported by the client. ₹189.88 is messaging spend only; it is not the total cost of preparation, website work, software or sales follow-up. The figures do not establish campaign ROI.</p>
               </div>
               <div className={styles.metrics}>
                 {platformResults.map(([label, value]) => <div key={label}><span>{label}</span><strong>{value}</strong></div>)}

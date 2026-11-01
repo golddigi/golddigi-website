@@ -2,7 +2,7 @@ import { pageMetadata } from "./seo";
 import { StructuredData } from "./components/structured-data";
 import { Header } from "./components/header";
 import { HeroVisual } from "./components/hero-visual";
-import { Icon, BrandMark } from "./components/icons";
+import { Icon } from "./components/icons";
 import { ProjectForm } from "./components/project-form";
 import { AutomationTeasers } from "./components/automation-teasers";
 import { BusinessEssentials } from "./components/business-essentials";
@@ -135,8 +135,7 @@ export default function Home() {
               </h2>
             </div>
             <p className="section-description">
-              Get discovered locally, give customers confidence, and spend less
-              time on repeat tasks. Start where your business needs it most.
+              Choose profile management for local business information, a website for detailed services and products, or automation for repeat enquiry tasks.
             </p>
           </div>
           <div className="pathways">
@@ -213,14 +212,7 @@ export default function Home() {
               Stay involved, see progress along the way, and understand
               what you’re getting before we begin.
             </p>
-            <div className="personal-note">
-              <BrandMark />
-              <p>
-                Focused support, by design.
-                <br />
-                <span>Clear communication from the first conversation to launch.</span>
-              </p>
-            </div>
+
           </div>
           <ol className="process-steps">
             {steps.map((step) => (
@@ -253,9 +245,7 @@ export default function Home() {
               Before we start.
             </h2>
             <p className="section-description">
-              Wondering where to start?
-              <br />
-              You’re in the right place.
+              Compare the services, check what can be scoped separately and see what to prepare.
             </p>
           </div>
           <div className="faq-list">
@@ -288,12 +278,10 @@ export default function Home() {
               <span className="contact-spark" aria-hidden="true">✳</span>
             </h2>
             <p>
-              Let’s turn “there must be a better way” into something that works for
-              you.
+              Share your existing website, Google profile or the task you repeat. Tell us what needs to change.
             </p>
             <p className="contact-small">
-              Want a stronger local presence, a better website, or less manual
-              work? Tell us about your business and what you’d like to improve.
+              A short description is enough to start. You can add a business or website link in the optional field.
             </p>
             <div className="contact-next">
               <h3>What happens next?</h3>

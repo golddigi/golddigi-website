@@ -44,31 +44,22 @@ export default function WebsitesPage() {
           <div className={styles.heroCopy}>
             <p className="eyebrow"><span className={styles.dot} /> CUSTOM WEBSITES</p>
             <h1>Website design &amp; development. <em>Built for your business.</em></h1>
-            <p className={styles.intro}>Give people a clear picture of what you do, a reason to trust you and an easy way to get in touch. We design and build your website around all three.</p>
+            <p className={styles.intro}>We design service websites, product catalogues and portfolios. Customers can explore your services, compare supplied specifications or check past work, then send an enquiry through the contact options agreed for your site.</p>
             <div className={styles.actions}>
               <Link className="button button-orange" href="/#contact">Let’s discuss your website <Icon name="arrow-up-right" /></Link>
               <a className="text-link" href="#website-projects">Explore our work <Icon name="arrow-down" /></a>
             </div>
           </div>
-          <aside className={styles.pathCard} aria-label="The visitor journey">
+          <aside className={styles.pathCard} aria-label="What to prepare for your website">
             <div className={styles.pathTop}><span>DESIGNED WITH PURPOSE</span><BrandMark /></div>
-            <p className={styles.pathHeadline}>From first impression<br />to <em>first conversation.</em></p>
+            <p className={styles.pathHeadline}>Prepare your brief.<br /><em>Start with what you have.</em></p>
             <ol className={styles.pathSteps}>
-              <li><span>01</span><div><strong>Understand your business</strong><p>What you do. Who you help.</p></div></li>
-              <li><span>02</span><div><strong>See a reason to trust you</strong><p>Your work. Your expertise.</p></div></li>
-              <li><span>03</span><div><strong>Take the next step</strong><p>A clear, straightforward enquiry.</p></div><Icon name="arrow-up-right" /></li>
+              <li><span>01</span><div><strong>Products or services</strong><p>Your range, priorities and existing website.</p></div></li>
+              <li><span>02</span><div><strong>Content and examples</strong><p>Brochures, specifications, photos and project images.</p></div></li>
+              <li><span>03</span><div><strong>How enquiries reach you</strong><p>Quotation requests, calls, WhatsApp or bookings.</p></div><Icon name="arrow-up-right" /></li>
             </ol>
           </aside>
         </section>
-
-        <div className={styles.stackStrip}>
-          <div className={`section-wrap ${styles.stackInner}`}>
-            <p>A considered toolkit.<br /><strong>A website built for you.</strong></p>
-            <div><span>Next.js</span><small>WEBSITE DEVELOPMENT</small></div>
-            <div><span>Sanity</span><small>CONTENT MANAGEMENT</small></div>
-            <div><span>GitHub</span><small>CODE & VERSION HISTORY</small></div>
-          </div>
-        </div>
 
         <section className="section-wrap section-space" id="website-projects">
           <div className={styles.sectionHeading}>
@@ -81,8 +72,8 @@ export default function WebsitesPage() {
         <section className={styles.deliverables}>
           <div className="section-wrap section-space">
             <div className={styles.sectionHeading}>
-              <div><p className="eyebrow">02 / YOUR WEBSITE</p><h2>What your<br /><em>website includes.</em></h2></div>
-              <p>We agree on the right pages, features and content tools for your business. Here’s what we can build into the plan.</p>
+              <div><p className="eyebrow">02 / YOUR WEBSITE</p><h2>Plan your<br /><em>website scope.</em></h2></div>
+              <p>Your proposal identifies the pages, editable content, enquiry options and launch work included. The features below are options to scope, rather than a fixed package. Copy, photography, checkout, integrations and ongoing updates are agreed separately.</p>
             </div>
             <div className={styles.deliverableGrid}>
               {deliverables.map((item, index) => (
