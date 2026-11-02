@@ -4,6 +4,12 @@ import { siteUrl } from "./site-config";
 // Register only complete, public pages here. Metadata and crawl discovery share
 // this list so unpublished city pages cannot accidentally enter the sitemap.
 export const publicPages = {
+  "/guides/tibet-market-bhiwadi": {
+    kind: "guide",
+    title: "Tibet Market Bhiwadi: Location, Opening Status & Photos",
+    name: "Tibet Market Bhiwadi visitor guide",
+    description: "Find Tibet Market in Bhiwadi, Rajasthan: listed address, map directions, how to check if it is open today, and links to visitor photos.",
+  },
   "/about": {
     kind: "about",
     title: "About Our Digital Services | Golddigi",

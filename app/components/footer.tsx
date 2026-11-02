@@ -17,6 +17,7 @@ export function Footer() {
           <Link href="/about">About us</Link>
           <Link href="/websites">Custom websites</Link>
           <Link href="/websites/bhiwadi">Website design in Bhiwadi</Link>
+          <Link href="/guides/tibet-market-bhiwadi">Tibet Market Bhiwadi guide</Link>
           <Link href="/google-business-profile">Google Business Profile</Link>
           <Link href="/ai-automations">AI automations</Link>
           <Link href="/#business-setup">Business essentials</Link>
