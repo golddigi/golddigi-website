@@ -6,7 +6,6 @@ import { pageMetadata } from "../../seo";
 
 export const metadata = pageMetadata("/guides/tibet-market-bhiwadi");
 
-const maps = "https://www.google.com/maps/search/?api=1&query=28.20661%2C76.82439";
 const directions = "https://www.google.com/maps/dir/?api=1&destination=28.20661%2C76.82439";
 const linkStyle = "inline-flex min-h-11 items-center text-[#9e351c]! underline! decoration-[#9e351c]/40 underline-offset-4 hover:decoration-current";
 const headingStyle = "mb-5! text-2xl! font-medium leading-tight! tracking-tight! sm:text-3xl!";
@@ -38,7 +37,7 @@ export default function TibetMarketGuide() {
           <section aria-labelledby="status-title" className="bg-[#e7e9e0] p-6 sm:p-8">
             <h2 id="status-title" className="mb-3! text-2xl! font-medium leading-tight! tracking-tight!">Is Tibet Market Bhiwadi open today?</h2>
             <p className="text-base leading-relaxed">We haven’t verified today’s opening status or a current opening-hours schedule. Confirm current hours with a local contact before making a special trip. The corrected pin identifies the location; it does not confirm that stalls are open.</p>
-            <a href={maps} target="_blank" rel="noopener noreferrer" className={`${linkStyle} mt-3`}>Open the corrected map pin</a>
+            <Link href="/google-business-profile" className={`${linkStyle} mt-3`}>Explore Google Business Profile optimization</Link>
           </section>
         </div>
 
