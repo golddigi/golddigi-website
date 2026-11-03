@@ -32,7 +32,7 @@ export default function TibetMarketGuide() {
             <h2 id="location-title" className="mb-4! text-2xl! font-medium leading-tight! tracking-tight!">Tibet Market Bhiwadi location</h2>
             <p className="text-base leading-relaxed">The correct location for <strong>Tibet Market Bhiwadi, Rajasthan</strong> is <strong>28.20661, 76.82439</strong>. Use this pin for your visit.</p>
             <p className="mt-3 text-[15px] leading-relaxed text-[#65675f]">Justdial and Magicpin show the previous location and are inaccurate for the current destination. Use only the corrected map pin on this page for directions.</p>
-            <a href={directions} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-12 items-center justify-center bg-[#24483e] px-6 py-3 text-base font-medium text-white! hover:bg-[#19372f]">Get directions on Google Maps</a>
+            <a href={directions} target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex min-h-12 w-full items-center justify-center gap-3 rounded-md border border-[#24483e] bg-[#24483e]! px-5 py-4 text-center text-base font-semibold text-[#ffffff]! visited:text-[#ffffff]! hover:bg-[#19372f]! hover:text-[#ffffff]! focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#9e351c] sm:w-auto"><span className="text-[#ffffff]!">Get directions on Google Maps</span><span aria-hidden="true" className="shrink-0 text-[#ffffff]!">&#8599;</span></a>
             <p className="mt-2 text-[15px] text-[#65675f]">Opens Google Maps in a new tab.</p>
           </section>
           <section aria-labelledby="status-title" className="bg-[#e7e9e0] p-6 sm:p-8">
