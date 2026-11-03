@@ -4,6 +4,12 @@ import { siteUrl } from "./site-config";
 // Register only complete, public pages here. Metadata and crawl discovery share
 // this list so unpublished city pages cannot accidentally enter the sitemap.
 export const publicPages = {
+  "/privacy": {
+    kind: "guide",
+    title: "Privacy & Website Analytics | Golddigi",
+    name: "Privacy and website analytics",
+    description: "How we use Google Analytics to understand website visits, how enquiry links work, and how to contact us about privacy.",
+  },
   "/guides/tibet-market-bhiwadi": {
     kind: "guide",
     title: "Tibet Market Bhiwadi: Correct Location & Map Directions",

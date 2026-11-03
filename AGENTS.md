@@ -34,7 +34,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Keep the detailed tool list in an accessible disclosure after the process section, so the business information comes first.
 - Soni Hospital and Divine Consultancy remain listed as past work without external links while their destinations are unavailable. Recheck supplied replacement URLs before restoring links.
 - The owner has no testimonials, approved pricing, delivery windows, or detailed role statements available yet. Leave these out until supplied; this is a content dependency, not unfinished implementation.
-- No server-side form or analytics was added, so the conditional privacy-policy work remains inapplicable. Reassess if data collection changes.
+- Updated 2026-11-03: GA4 measurement ID G-FK4QX2QF54 is installed in the root layout. Privacy information is published at /privacy and linked in the footer. No server-side contact form was added. Keep privacy information aligned with actual analytics changes.
 
 ## Work summary — recorded 2026-09-05 at 10:55 IST (UTC+05:30)
 

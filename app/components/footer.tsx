@@ -15,6 +15,7 @@ export function Footer() {
         </div>
         <nav className={styles.links} aria-label="Footer navigation">
           <Link href="/about">About us</Link>
+          <Link href="/privacy">Privacy &amp; analytics</Link>
           <Link href="/websites">Custom websites</Link>
           <Link href="/websites/bhiwadi">Website design in Bhiwadi</Link>
           <Link href="/guides/tibet-market-bhiwadi">Tibet Market Bhiwadi guide</Link>
