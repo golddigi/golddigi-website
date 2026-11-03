@@ -47,6 +47,28 @@ export function StructuredData({ path }: { path: PublicPagePath }) {
     });
   }
 
+  if (path === "/guides/tibet-market-bhiwadi") {
+    Object.assign(graph[2], {
+      datePublished: "2026-11-02", dateModified: "2026-11-03",
+      about: { "@id": `${url}#market` },
+      publisher: { "@id": organizationId },
+    });
+    graph.push({
+      "@type": "Place", "@id": `${url}#market`,
+      name: "Tibet Market Bhiwadi",
+      alternateName: ["Tibetan Market Bhiwadi", "Tibbati Market Bhiwadi"],
+      geo: { "@type": "GeoCoordinates", latitude: 28.20661, longitude: 76.82439 },
+      hasMap: "https://www.google.com/maps/search/?api=1&query=28.20661%2C76.82439",
+      description: "Current location supplied for Tibet Market Bhiwadi, Rajasthan. Previous directory locations are outdated.",
+    }, {
+      "@type": "BreadcrumbList", "@id": `${url}#breadcrumb`,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${siteUrl}/` },
+        { "@type": "ListItem", position: 2, name: page.name, item: url },
+      ],
+    });
+  }
+
   // Do not add offices, ratings, prices or service areas without real evidence.
   return <script type="application/ld+json" dangerouslySetInnerHTML={{
     __html: JSON.stringify({ "@context": "https://schema.org", "@graph": graph }).replace(/</g, "\u003c"),

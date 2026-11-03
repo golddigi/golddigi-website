@@ -6,9 +6,9 @@ import { siteUrl } from "./site-config";
 export const publicPages = {
   "/guides/tibet-market-bhiwadi": {
     kind: "guide",
-    title: "Tibet Market Bhiwadi: Location, Opening Status & Photos",
+    title: "Tibet Market Bhiwadi: Correct Location & Map Directions",
     name: "Tibet Market Bhiwadi visitor guide",
-    description: "Find Tibet Market in Bhiwadi, Rajasthan: listed address, map directions, how to check if it is open today, and links to visitor photos.",
+    description: "Find the correct Tibet Market Bhiwadi location at 28.20661, 76.82439. Open the updated map, get directions and avoid outdated directory locations.",
   },
   "/about": {
     kind: "about",
